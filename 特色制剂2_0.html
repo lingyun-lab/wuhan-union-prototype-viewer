@@ -1,0 +1,293 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>特色制剂2.0</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="files/特色制剂2_0/styles.css" type="text/css" rel="stylesheet"/>
+    <script src="resources/scripts/jquery-3.2.1.min.js"></script>
+    <script src="resources/scripts/axure/axQuery.js"></script>
+    <script src="resources/scripts/axure/globals.js"></script>
+    <script src="resources/scripts/axutils.js"></script>
+    <script src="resources/scripts/axure/annotation.js"></script>
+    <script src="resources/scripts/axure/axQuery.std.js"></script>
+    <script src="resources/scripts/axure/doc.js"></script>
+    <script src="resources/scripts/messagecenter.js"></script>
+    <script src="resources/scripts/axure/events.js"></script>
+    <script src="resources/scripts/axure/recording.js"></script>
+    <script src="resources/scripts/axure/action.js"></script>
+    <script src="resources/scripts/axure/expr.js"></script>
+    <script src="resources/scripts/axure/geometry.js"></script>
+    <script src="resources/scripts/axure/flyout.js"></script>
+    <script src="resources/scripts/axure/model.js"></script>
+    <script src="resources/scripts/axure/repeater.js"></script>
+    <script src="resources/scripts/axure/sto.js"></script>
+    <script src="resources/scripts/axure/utils.temp.js"></script>
+    <script src="resources/scripts/axure/variables.js"></script>
+    <script src="resources/scripts/axure/drag.js"></script>
+    <script src="resources/scripts/axure/move.js"></script>
+    <script src="resources/scripts/axure/visibility.js"></script>
+    <script src="resources/scripts/axure/style.js"></script>
+    <script src="resources/scripts/axure/adaptive.js"></script>
+    <script src="resources/scripts/axure/tree.js"></script>
+    <script src="resources/scripts/axure/init.temp.js"></script>
+    <script src="resources/scripts/axure/legacy.js"></script>
+    <script src="resources/scripts/axure/viewer.js"></script>
+    <script src="resources/scripts/axure/math.js"></script>
+    <script src="resources/scripts/axure/jquery.nicescroll.min.js"></script>
+    <script src="data/document.js"></script>
+    <script src="files/特色制剂2_0/data.js"></script>
+    <script type="text/javascript">
+      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
+      $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
+      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
+    </script>
+  </head>
+  <body>
+    <div id="base" class="">
+
+      <!-- Unnamed (矩形) -->
+      <div id="u11381" class="ax_default _文本段落">
+        <div id="u11381_div" class=""></div>
+        <div id="u11381_text" class="text ">
+          <p><span>特色制剂是协和医院制剂药房研制的明星药品，患者能够根据需要选择购买外用制剂和内服制剂，购买步骤如下：</span></p><p><span><br></span></p><p><span>1.选择好就诊人</span></p><p><span><br></span></p><p><span>2.选择要购买的药品和数量，点击提交订单，官微这边需要做如下校验&nbsp;&nbsp; </span></p><p><span><br></span></p><p><span>就诊人在HIS中是否已经建卡</span></p><p><span>一个就诊人一天之内只能购买一次特色制剂</span></p><p><span>从HIS获取药品信息校验最大购买数量和库存</span></p><p><span>单张处方金额不能超过2000</span></p><p><span>不能同时购买内服制剂和外用制剂</span></p><p><span>将药品id和药品数量，病人信息传给HIS，由HIS校验是否复诊病人能否开药</span></p><p><span>3.校验通过之后用户填写问卷，每种药品都有一个单独的问卷，如果选择多个药品就要显示多个药品问卷，然后一起提交</span></p><p><span><br></span></p><p><span>4.问卷提交之后，将就诊人信息，药品信息，问卷信息提交到后台，</span></p><p><span><br></span></p><p><span>&nbsp;&nbsp; 后台需要根据药品和病人信息调用HIS的接口获取开药的医生信息，然后保存药品信息极其对应的开单医生，</span></p><p><span><br></span></p><p><span>&nbsp;&nbsp; 然后将就诊人信息，药品信息传到HIS进行下单，下单成功HIS会返回处方号码和处方金额，挂号号码，挂号金额，</span></p><p><span><br></span></p><p><span>&nbsp; 后端保存HIS返回的信息，然后给前端返回HIS中实际的明细和金额</span></p><p><span><br></span></p><p><span>5.患者选择好邮寄方式以及邮寄地址之后，调用支付下单接口预下单，跳转到收银台页面，支付完成之后订单状态就变成了 支付成功-待医生开单</span></p><p><span><br></span></p><p><span>6.开方的医生可以在原启的医护端APP上查到 支付成功-待医生开单 的订单，然后可以在APP上操作审核通过和审核不通过</span></p><p><span><br></span></p><p><span>&nbsp;&nbsp; 如果审核通过，会更新订单状态为审核通过，并且通过 EMS的 接口，发起快递下单并获取到快递单号，快递下单成功之后，调用HIS的接口更新HIS中特色制剂订单的快递单号 </span></p><p><span><br></span></p><p><span>&nbsp;&nbsp; 如果审核不通过，会调用HIS的发起退费接口，将该订单标记为退费，然后原启那边可以通过HIS的退费列表接口获取到该退款单，然后跑批调用我们这笔的退费接口进行实际退费</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u11382" class="ax_default _图片_">
+        <img id="u11382_img" class="img " src="images/特色制剂2_0/u11382.png"/>
+        <div id="u11382_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u11383" class="ax_default _图片_">
+        <img id="u11383_img" class="img " src="images/首页/u550.png"/>
+        <div id="u11383_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u11384" class="ax_default box_1">
+        <div id="u11384_div" class=""></div>
+        <div id="u11384_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u11385" class="ax_default _三级标题">
+        <div id="u11385_div" class=""></div>
+        <div id="u11385_text" class="text ">
+          <p><span>挂号服务</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u11386" class="ax_default _三级标题">
+        <div id="u11386_div" class=""></div>
+        <div id="u11386_text" class="text ">
+          <p><span>在线挂号</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u11387" class="ax_default box_1">
+        <div id="u11387_div" class=""></div>
+        <div id="u11387_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u11388" class="ax_default _三级标题">
+        <div id="u11388_div" class=""></div>
+        <div id="u11388_text" class="text ">
+          <p><span>在线取号</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u11389" class="ax_default _图片_">
+        <img id="u11389_img" class="img " src="images/在线取号（2_0）/u10646.svg"/>
+        <div id="u11389_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u11390" class="ax_default _图片_">
+        <img id="u11390_img" class="img " src="images/特色制剂2_0/u11390.png"/>
+        <div id="u11390_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u11391" class="ax_default _图片_">
+        <img id="u11391_img" class="img " src="images/特色制剂2_0/u11391.png"/>
+        <div id="u11391_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u11392" class="ax_default _图片_">
+        <img id="u11392_img" class="img " src="images/特色制剂2_0/u11392.png"/>
+        <div id="u11392_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u11393" class="ax_default _图片_">
+        <img id="u11393_img" class="img " src="images/特色制剂2_0/u11393.png"/>
+        <div id="u11393_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u11394" class="ax_default _图片_">
+        <img id="u11394_img" class="img " src="images/特色制剂2_0/u11394.png"/>
+        <div id="u11394_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u11395" class="ax_default _图片_">
+        <img id="u11395_img" class="img " src="images/特色制剂2_0/u11395.png"/>
+        <div id="u11395_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u11396" class="ax_default _图片_">
+        <img id="u11396_img" class="img " src="images/特色制剂2_0/u11396.png"/>
+        <div id="u11396_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u11397" class="ax_default _图片_">
+        <img id="u11397_img" class="img " src="images/特色制剂2_0/u11397.png"/>
+        <div id="u11397_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u11398" class="ax_default _图片_">
+        <img id="u11398_img" class="img " src="images/特色制剂2_0/u11398.png"/>
+        <div id="u11398_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u11399" class="ax_default _图片_">
+        <img id="u11399_img" class="img " src="images/特色制剂2_0/u11399.png"/>
+        <div id="u11399_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u11400" class="ax_default _图片_">
+        <img id="u11400_img" class="img " src="images/特色制剂2_0/u11400.png"/>
+        <div id="u11400_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u11401" class="ax_default _图片_">
+        <img id="u11401_img" class="img " src="images/特色制剂2_0/u11401.png"/>
+        <div id="u11401_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u11402" class="ax_default _图片_">
+        <img id="u11402_img" class="img " src="images/特色制剂2_0/u11402.png"/>
+        <div id="u11402_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u11403" class="ax_default _图片_">
+        <img id="u11403_img" class="img " src="images/特色制剂2_0/u11403.png"/>
+        <div id="u11403_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u11404" class="ax_default _图片_">
+        <img id="u11404_img" class="img " src="images/特色制剂2_0/u11404.png"/>
+        <div id="u11404_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u11405" class="ax_default _图片_">
+        <img id="u11405_img" class="img " src="images/特色制剂2_0/u11405.png"/>
+        <div id="u11405_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u11406" class="ax_default _图片_">
+        <img id="u11406_img" class="img " src="images/特色制剂2_0/u11406.png"/>
+        <div id="u11406_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u11407" class="ax_default _图片_">
+        <img id="u11407_img" class="img " src="images/特色制剂2_0/u11407.png"/>
+        <div id="u11407_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u11408" class="ax_default _图片_">
+        <img id="u11408_img" class="img " src="images/特色制剂2_0/u11408.png"/>
+        <div id="u11408_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u11409" class="ax_default _图片_">
+        <img id="u11409_img" class="img " src="images/特色制剂2_0/u11409.png"/>
+        <div id="u11409_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u11410" class="ax_default _图片_">
+        <img id="u11410_img" class="img " src="images/特色制剂2_0/u11410.png"/>
+        <div id="u11410_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+    </div>
+    <script src="resources/scripts/axure/ios.js"></script>
+  </body>
+</html>
