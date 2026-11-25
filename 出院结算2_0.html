@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>出院结算2.0</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="files/出院结算2_0/styles.css" type="text/css" rel="stylesheet"/>
+    <script src="resources/scripts/jquery-3.2.1.min.js"></script>
+    <script src="resources/scripts/axure/axQuery.js"></script>
+    <script src="resources/scripts/axure/globals.js"></script>
+    <script src="resources/scripts/axutils.js"></script>
+    <script src="resources/scripts/axure/annotation.js"></script>
+    <script src="resources/scripts/axure/axQuery.std.js"></script>
+    <script src="resources/scripts/axure/doc.js"></script>
+    <script src="resources/scripts/messagecenter.js"></script>
+    <script src="resources/scripts/axure/events.js"></script>
+    <script src="resources/scripts/axure/recording.js"></script>
+    <script src="resources/scripts/axure/action.js"></script>
+    <script src="resources/scripts/axure/expr.js"></script>
+    <script src="resources/scripts/axure/geometry.js"></script>
+    <script src="resources/scripts/axure/flyout.js"></script>
+    <script src="resources/scripts/axure/model.js"></script>
+    <script src="resources/scripts/axure/repeater.js"></script>
+    <script src="resources/scripts/axure/sto.js"></script>
+    <script src="resources/scripts/axure/utils.temp.js"></script>
+    <script src="resources/scripts/axure/variables.js"></script>
+    <script src="resources/scripts/axure/drag.js"></script>
+    <script src="resources/scripts/axure/move.js"></script>
+    <script src="resources/scripts/axure/visibility.js"></script>
+    <script src="resources/scripts/axure/style.js"></script>
+    <script src="resources/scripts/axure/adaptive.js"></script>
+    <script src="resources/scripts/axure/tree.js"></script>
+    <script src="resources/scripts/axure/init.temp.js"></script>
+    <script src="resources/scripts/axure/legacy.js"></script>
+    <script src="resources/scripts/axure/viewer.js"></script>
+    <script src="resources/scripts/axure/math.js"></script>
+    <script src="resources/scripts/axure/jquery.nicescroll.min.js"></script>
+    <script src="data/document.js"></script>
+    <script src="files/出院结算2_0/data.js"></script>
+    <script type="text/javascript">
+      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
+      $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
+      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
+    </script>
+  </head>
+  <body>
+    <div id="base" class="">
+
+      <!-- Unnamed (图片) -->
+      <div id="u19218" class="ax_default _图片_">
+        <img id="u19218_img" class="img " src="images/出院结算2_0/u19218.png"/>
+        <div id="u19218_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u19219" class="ax_default _图片_">
+        <img id="u19219_img" class="img " src="images/出院结算2_0/u19219.png"/>
+        <div id="u19219_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u19220" class="ax_default _图片_">
+        <img id="u19220_img" class="img " src="images/出院结算2_0/u19220.png"/>
+        <div id="u19220_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u19221" class="ax_default _图片_">
+        <img id="u19221_img" class="img " src="images/出院结算2_0/u19221.png"/>
+        <div id="u19221_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u19222" class="ax_default _图片_">
+        <img id="u19222_img" class="img " src="images/出院结算2_0/u19222.png"/>
+        <div id="u19222_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u19223" class="ax_default _文本段落">
+        <div id="u19223_div" class=""></div>
+        <div id="u19223_text" class="text ">
+          <p><span>1、出院结算不涉及退费和缴费，只做退费登记，由his跑批退；结算需要补缴的跳转到住院预缴进行补缴</span></p><p><span>2、校验患者信息，查询his接口：3.5.12.查询已审核的出院待缴费信息（MOP_NetQueryOutpHosPay）</span></p><p><span>3、订单锁定调用his接口：3.5.13.出院结算锁定（MOP_NetOutpHosPayLock）</span></p><p><span>4、出院缴费明细调用his接口：3.5.6.预交记录查询（MOP_NetInHosChargeRecordQuery）</span></p><p><span><br></span></p><p><span>5、出院结算通知his接口：MOP_NetOutpHosPayConfirm</span></p><p><span><br></span></p><p><span>6、出院结算分为平账结算、住院补缴、结算退费三种类型；平账结算直接通知HIS，补缴订单需要跳转到住院预缴，住院退费先调用退费确认接口在核心下单，再提交退费申请通知his</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u19224" class="ax_default _文本段落">
+        <div id="u19224_div" class=""></div>
+        <div id="u19224_text" class="text ">
+          <p><span>住院退费由于财务每天凌晨会提现商户号中钱，如果每天缴费的金额，不够晚上跑批退费的，就会出现 余额不足，退费失败的情况，我们 定时任务 </span></p><p><span>inpatientRefundRetryJob 会每隔20分钟重新对退费失败的退款单重新发起退费，但是只会对当天退费失败的订单进行重试退费 （这个是防止财务那边手动退过了，我们这边又重试退出去了，防止短款）。所以如果信息科有反馈 退款失败 的情况，先跟他们确认财务有没有手动退款，如果没有我们再操作这个定时任务手动退款，点击定时任务的执行按钮，并且输入参数：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u19225" class="ax_default _图片_">
+        <img id="u19225_img" class="img " src="images/出院结算2_0/u19225.png"/>
+        <div id="u19225_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u19226" class="ax_default _图片_">
+        <img id="u19226_img" class="img " src="images/出院结算2_0/u19226.png"/>
+        <div id="u19226_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u19227" class="ax_default _图片_">
+        <img id="u19227_img" class="img " src="images/出院结算2_0/u19227.png"/>
+        <div id="u19227_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u19228" class="ax_default _图片_">
+        <img id="u19228_img" class="img " src="images/出院结算2_0/u19228.png"/>
+        <div id="u19228_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u19229" class="ax_default _图片_">
+        <img id="u19229_img" class="img " src="images/住院缴费（2_0）/u18901.jpg"/>
+        <div id="u19229_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u19230" class="ax_default _图片_">
+        <img id="u19230_img" class="img " src="images/出院结算2_0/u19230.png"/>
+        <div id="u19230_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+    </div>
+    <script src="resources/scripts/axure/ios.js"></script>
+  </body>
+</html>

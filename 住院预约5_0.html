@@ -1,0 +1,3542 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>住院预约5.0</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="files/住院预约5_0/styles.css" type="text/css" rel="stylesheet"/>
+    <script src="resources/scripts/jquery-3.2.1.min.js"></script>
+    <script src="resources/scripts/axure/axQuery.js"></script>
+    <script src="resources/scripts/axure/globals.js"></script>
+    <script src="resources/scripts/axutils.js"></script>
+    <script src="resources/scripts/axure/annotation.js"></script>
+    <script src="resources/scripts/axure/axQuery.std.js"></script>
+    <script src="resources/scripts/axure/doc.js"></script>
+    <script src="resources/scripts/messagecenter.js"></script>
+    <script src="resources/scripts/axure/events.js"></script>
+    <script src="resources/scripts/axure/recording.js"></script>
+    <script src="resources/scripts/axure/action.js"></script>
+    <script src="resources/scripts/axure/expr.js"></script>
+    <script src="resources/scripts/axure/geometry.js"></script>
+    <script src="resources/scripts/axure/flyout.js"></script>
+    <script src="resources/scripts/axure/model.js"></script>
+    <script src="resources/scripts/axure/repeater.js"></script>
+    <script src="resources/scripts/axure/sto.js"></script>
+    <script src="resources/scripts/axure/utils.temp.js"></script>
+    <script src="resources/scripts/axure/variables.js"></script>
+    <script src="resources/scripts/axure/drag.js"></script>
+    <script src="resources/scripts/axure/move.js"></script>
+    <script src="resources/scripts/axure/visibility.js"></script>
+    <script src="resources/scripts/axure/style.js"></script>
+    <script src="resources/scripts/axure/adaptive.js"></script>
+    <script src="resources/scripts/axure/tree.js"></script>
+    <script src="resources/scripts/axure/init.temp.js"></script>
+    <script src="resources/scripts/axure/legacy.js"></script>
+    <script src="resources/scripts/axure/viewer.js"></script>
+    <script src="resources/scripts/axure/math.js"></script>
+    <script src="resources/scripts/axure/jquery.nicescroll.min.js"></script>
+    <script src="data/document.js"></script>
+    <script src="files/住院预约5_0/data.js"></script>
+    <script type="text/javascript">
+      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
+      $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
+      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
+    </script>
+  </head>
+  <body>
+    <div id="base" class="">
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22560" class="ax_default _文本段落">
+        <div id="u22560_div" class=""></div>
+        <div id="u22560_text" class="text ">
+          <p><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;font-weight:700;">预约详情页面说明：</span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">1、未返回明确状态或返回失败时弹窗提示患者，并支持重新进行提交；</span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">2、等床位：指患者成功提交住院预约申请，而医院暂时还未有空余床位；</span></p><ul><li style=""><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">此状态下，患者可以进行取消住院预约申请；</span></li></ul><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">3、待入院：指医院有空余床位，进入该状态的条件是HIS调平台接口通知我们该患者的预约申请单已经有空余床位，但是需要进一步前往线下办理入院手续；</span></p><ul><li style=""><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">进入此状态任然支持患者取消住院预约申请；</span></li></ul><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">4、入院成功：指患者已经前往线下办理入院手续，且HIS调取平台接口通知平台，该患者入院申请单已经办理入院；</span></p><ul><li style=""><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">此时需要展示HIS返回患者的住院号；</span></li></ul><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;color:#D9001B;">注意：预约详情中的医保性质需要开发拉协和旧官微的代码看一下是HIS返回的还是根据患者前面选择的医保决定的，保持跟官微一致即可；</span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;"><br></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (页面头部-无色) -->
+
+      <!-- Unnamed (组合) -->
+      <div id="u22562" class="ax_default" data-left="565" data-top="42" data-width="377" data-height="797">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u22563" class="ax_default box_1">
+          <div id="u22563_div" class=""></div>
+          <div id="u22563_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (组合) -->
+        <div id="u22564" class="ax_default" data-left="853" data-top="73" data-width="79" data-height="28">
+
+          <!-- Unnamed (矩形) -->
+          <div id="u22565" class="ax_default flow_shape1">
+            <div id="u22565_div" class=""></div>
+            <div id="u22565_text" class="text " style="display:none; visibility: hidden">
+              <p></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (椭圆) -->
+          <div id="u22566" class="ax_default ellipse1">
+            <img id="u22566_img" class="img " src="images/首页就医公告/u657.svg"/>
+            <div id="u22566_text" class="text " style="display:none; visibility: hidden">
+              <p></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (椭圆) -->
+          <div id="u22567" class="ax_default ellipse1">
+            <img id="u22567_img" class="img " src="images/首页就医公告/u658.svg"/>
+            <div id="u22567_text" class="text " style="display:none; visibility: hidden">
+              <p></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (椭圆) -->
+          <div id="u22568" class="ax_default ellipse1">
+            <img id="u22568_img" class="img " src="images/首页就医公告/u659.svg"/>
+            <div id="u22568_text" class="text " style="display:none; visibility: hidden">
+              <p></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (椭圆) -->
+          <div id="u22569" class="ax_default ellipse1">
+            <img id="u22569_img" class="img " src="images/首页就医公告/u660.svg"/>
+            <div id="u22569_text" class="text " style="display:none; visibility: hidden">
+              <p></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (椭圆) -->
+          <div id="u22570" class="ax_default ellipse1">
+            <img id="u22570_img" class="img " src="images/首页就医公告/u660.svg"/>
+            <div id="u22570_text" class="text " style="display:none; visibility: hidden">
+              <p></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (垂直线) -->
+          <div id="u22571" class="ax_default line">
+            <img id="u22571_img" class="img " src="images/首页就医公告/u662.svg"/>
+            <div id="u22571_text" class="text " style="display:none; visibility: hidden">
+              <p></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Unnamed (形状) -->
+        <div id="u22572" class="ax_default icon1">
+          <img id="u22572_img" class="img " src="images/首页就医公告/u663.svg"/>
+          <div id="u22572_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- 二级功能标题 (矩形) -->
+        <div id="u22573" class="ax_default label" data-label="二级功能标题">
+          <div id="u22573_div" class=""></div>
+          <div id="u22573_text" class="text ">
+            <p><span>100%</span></p>
+          </div>
+        </div>
+
+        <!-- 二级功能标题 (矩形) -->
+        <div id="u22574" class="ax_default label" data-label="二级功能标题">
+          <div id="u22574_div" class=""></div>
+          <div id="u22574_text" class="text ">
+            <p><span>12:00</span></p>
+          </div>
+        </div>
+
+        <!-- 二级功能标题 (矩形) -->
+        <div id="u22575" class="ax_default label" data-label="二级功能标题">
+          <div id="u22575_div" class=""></div>
+          <div id="u22575_text" class="text ">
+            <p><span>4G</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (形状) -->
+        <div id="u22576" class="ax_default icon1">
+          <img id="u22576_img" class="img " src="images/首页就医公告/u667.svg"/>
+          <div id="u22576_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (形状) -->
+        <div id="u22577" class="ax_default icon">
+          <img id="u22577_img" class="img " src="images/首页就医公告/u668.svg"/>
+          <div id="u22577_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+      </div>
+      <div id="u22561" style="display:none; visibility:hidden;"></div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22578" class="ax_default _三级标题">
+        <div id="u22578_div" class=""></div>
+        <div id="u22578_text" class="text ">
+          <p><span>入院单列表</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u22579" class="ax_default _图片_">
+        <img id="u22579_img" class="img " src="images/场景化推送/u2365.png"/>
+        <div id="u22579_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22580" class="ax_default _文本段落">
+        <div id="u22580_div" class=""></div>
+        <div id="u22580_text" class="text ">
+          <p><span>请选择您需要线上预约住院的人员信息，如还未绑定，请先进行绑定！</span><span style="color:#D9001B;">急诊病人，公医，特约病人可不走自助线上预约登记流程。</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22581" class="ax_default _文本段落">
+        <div id="u22581_div" class=""></div>
+        <div id="u22581_text" class="text ">
+          <p><span>请选择您需要线上预约住院的人员入院申请单信息。</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22582" class="ax_default box_2">
+        <div id="u22582_div" class=""></div>
+        <div id="u22582_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u22583" class="ax_default _图片_">
+        <img id="u22583_img" class="img " src="images/住院预约5_0/u22583.png"/>
+        <div id="u22583_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22584" class="ax_default box_2">
+        <div id="u22584_div" class=""></div>
+        <div id="u22584_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u22585" class="ax_default _图片_">
+        <img id="u22585_img" class="img " src="images/住院预约5_0/u22583.png"/>
+        <div id="u22585_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u22586" class="ax_default _图片_">
+        <img id="u22586_img" class="img " src="images/协和部分融合版效果图/u15.png"/>
+        <div id="u22586_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22587" class="ax_default box_2">
+        <div id="u22587_div" class=""></div>
+        <div id="u22587_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22588" class="ax_default box_2">
+        <div id="u22588_div" class=""></div>
+        <div id="u22588_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u22589" class="ax_default _图片_">
+        <img id="u22589_img" class="img " src="images/就诊流程指引5_0/u2627.png"/>
+        <div id="u22589_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22590" class="ax_default _三级标题">
+        <div id="u22590_div" class=""></div>
+        <div id="u22590_text" class="text ">
+          <p><span>疑难疾病会诊记录</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u22591" class="ax_default _图片_">
+        <img id="u22591_img" class="img " src="images/就诊流程指引5_0/u2627.png"/>
+        <div id="u22591_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22592" class="ax_default _三级标题">
+        <div id="u22592_div" class=""></div>
+        <div id="u22592_text" class="text ">
+          <p><span>MDT门诊记录</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u22593" class="ax_default _图片_">
+        <img id="u22593_img" class="img " src="images/就诊流程指引5_0/u2627.png"/>
+        <div id="u22593_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22594" class="ax_default _三级标题">
+        <div id="u22594_div" class=""></div>
+        <div id="u22594_text" class="text ">
+          <p><span>出院结算记录</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u22595" class="ax_default _图片_">
+        <img id="u22595_img" class="img " src="images/就诊流程指引5_0/u2627.png"/>
+        <div id="u22595_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22596" class="ax_default _三级标题">
+        <div id="u22596_div" class=""></div>
+        <div id="u22596_text" class="text ">
+          <p><span>病历复印记录</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u22597" class="ax_default _图片_">
+        <img id="u22597_img" class="img " src="images/就诊流程指引5_0/u2627.png"/>
+        <div id="u22597_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22598" class="ax_default _三级标题">
+        <div id="u22598_div" class=""></div>
+        <div id="u22598_text" class="text ">
+          <p><span>国际门诊会诊记录</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u22599" class="ax_default _图片_">
+        <img id="u22599_img" class="img " src="images/就诊流程指引5_0/u2627.png"/>
+        <div id="u22599_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22600" class="ax_default _三级标题">
+        <div id="u22600_div" class=""></div>
+        <div id="u22600_text" class="text ">
+          <p><span>住院预约记录</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22601" class="ax_default box_1">
+        <img id="u22601_img" class="img " src="images/住院预约5_0/u22601.svg"/>
+        <div id="u22601_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22602" class="ax_default box_2">
+        <div id="u22602_div" class=""></div>
+        <div id="u22602_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (无色加长) -->
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22604" class="ax_default box_1">
+        <div id="u22604_div" class=""></div>
+        <div id="u22604_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (组合) -->
+      <div id="u22605" class="ax_default" data-left="1323" data-top="1068" data-width="79" data-height="28">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u22606" class="ax_default flow_shape1">
+          <div id="u22606_div" class=""></div>
+          <div id="u22606_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (椭圆) -->
+        <div id="u22607" class="ax_default ellipse1">
+          <img id="u22607_img" class="img " src="images/首页就医公告/u657.svg"/>
+          <div id="u22607_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (椭圆) -->
+        <div id="u22608" class="ax_default ellipse1">
+          <img id="u22608_img" class="img " src="images/首页就医公告/u658.svg"/>
+          <div id="u22608_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (椭圆) -->
+        <div id="u22609" class="ax_default ellipse1">
+          <img id="u22609_img" class="img " src="images/首页就医公告/u659.svg"/>
+          <div id="u22609_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (椭圆) -->
+        <div id="u22610" class="ax_default ellipse1">
+          <img id="u22610_img" class="img " src="images/首页就医公告/u660.svg"/>
+          <div id="u22610_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (椭圆) -->
+        <div id="u22611" class="ax_default ellipse1">
+          <img id="u22611_img" class="img " src="images/首页就医公告/u660.svg"/>
+          <div id="u22611_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (垂直线) -->
+        <div id="u22612" class="ax_default line">
+          <img id="u22612_img" class="img " src="images/首页就医公告/u662.svg"/>
+          <div id="u22612_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (形状) -->
+      <div id="u22613" class="ax_default icon1">
+        <img id="u22613_img" class="img " src="images/首页就医公告/u663.svg"/>
+        <div id="u22613_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- 二级功能标题 (矩形) -->
+      <div id="u22614" class="ax_default label" data-label="二级功能标题">
+        <div id="u22614_div" class=""></div>
+        <div id="u22614_text" class="text ">
+          <p><span>100%</span></p>
+        </div>
+      </div>
+
+      <!-- 二级功能标题 (矩形) -->
+      <div id="u22615" class="ax_default label" data-label="二级功能标题">
+        <div id="u22615_div" class=""></div>
+        <div id="u22615_text" class="text ">
+          <p><span>12:00</span></p>
+        </div>
+      </div>
+
+      <!-- 二级功能标题 (矩形) -->
+      <div id="u22616" class="ax_default label" data-label="二级功能标题">
+        <div id="u22616_div" class=""></div>
+        <div id="u22616_text" class="text ">
+          <p><span>4G</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (形状) -->
+      <div id="u22617" class="ax_default icon1">
+        <img id="u22617_img" class="img " src="images/首页就医公告/u667.svg"/>
+        <div id="u22617_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (形状) -->
+      <div id="u22618" class="ax_default icon1">
+        <img id="u22618_img" class="img " src="images/首页就医公告/u668.svg"/>
+        <div id="u22618_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+      <div id="u22603" style="display:none; visibility:hidden;"></div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22619" class="ax_default _三级标题">
+        <div id="u22619_div" class=""></div>
+        <div id="u22619_text" class="text ">
+          <p><span>住院预约记录</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u22620" class="ax_default _图片_">
+        <img id="u22620_img" class="img " src="images/在线取号（5_0）/u10948.png"/>
+        <div id="u22620_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (组合) -->
+      <div id="u22621" class="ax_default" data-left="1056" data-top="1305" data-width="351" data-height="136">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u22622" class="ax_default box_2">
+          <div id="u22622_div" class=""></div>
+          <div id="u22622_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u22623" class="ax_default _三级标题">
+          <div id="u22623_div" class=""></div>
+          <div id="u22623_text" class="text ">
+            <p><span>待入院</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u22624" class="ax_default _三级标题">
+          <div id="u22624_div" class=""></div>
+          <div id="u22624_text" class="text ">
+            <p><span>N11消化内科</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (椭圆) -->
+        <div id="u22625" class="ax_default ellipse">
+          <img id="u22625_img" class="img " src="images/mdt_5_0_/u13695.svg"/>
+          <div id="u22625_text" class="text ">
+            <p><span>icon</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u22626" class="ax_default _三级标题">
+          <div id="u22626_div" class=""></div>
+          <div id="u22626_text" class="text ">
+            <p><span>住院人：张三</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u22627" class="ax_default _三级标题">
+          <div id="u22627_div" class=""></div>
+          <div id="u22627_text" class="text ">
+            <p><span>预约号：13623546346345324233</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u22628" class="ax_default _三级标题">
+          <div id="u22628_div" class=""></div>
+          <div id="u22628_text" class="text ">
+            <p><span>申请日期：2023-08-23 10:34:24</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u22629" class="ax_default _图片_">
+        <img id="u22629_img" class="img " src="images/就诊流程指引5_0/u2627.png"/>
+        <div id="u22629_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22630" class="ax_default _三级标题">
+        <div id="u22630_div" class=""></div>
+        <div id="u22630_text" class="text ">
+          <p><span>消息管理</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (组合) -->
+      <div id="u22631" class="ax_default" data-left="1056" data-top="1160" data-width="351" data-height="136">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u22632" class="ax_default box_2">
+          <div id="u22632_div" class=""></div>
+          <div id="u22632_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u22633" class="ax_default _三级标题">
+          <div id="u22633_div" class=""></div>
+          <div id="u22633_text" class="text ">
+            <p><span>等床位</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u22634" class="ax_default _三级标题">
+          <div id="u22634_div" class=""></div>
+          <div id="u22634_text" class="text ">
+            <p><span>N11消化内科</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (椭圆) -->
+        <div id="u22635" class="ax_default ellipse">
+          <img id="u22635_img" class="img " src="images/mdt_5_0_/u13695.svg"/>
+          <div id="u22635_text" class="text ">
+            <p><span>icon</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u22636" class="ax_default _三级标题">
+          <div id="u22636_div" class=""></div>
+          <div id="u22636_text" class="text ">
+            <p><span>住院人：张三</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u22637" class="ax_default _三级标题">
+          <div id="u22637_div" class=""></div>
+          <div id="u22637_text" class="text ">
+            <p><span>预约号：13623546346345324233</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u22638" class="ax_default _三级标题">
+          <div id="u22638_div" class=""></div>
+          <div id="u22638_text" class="text ">
+            <p><span>申请日期：2023-08-23 10:34:24</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (组合) -->
+      <div id="u22639" class="ax_default" data-left="1056" data-top="1453" data-width="351" data-height="136">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u22640" class="ax_default box_2">
+          <div id="u22640_div" class=""></div>
+          <div id="u22640_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u22641" class="ax_default _三级标题">
+          <div id="u22641_div" class=""></div>
+          <div id="u22641_text" class="text ">
+            <p><span>入院成功</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u22642" class="ax_default _三级标题">
+          <div id="u22642_div" class=""></div>
+          <div id="u22642_text" class="text ">
+            <p><span>N11消化内科</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (椭圆) -->
+        <div id="u22643" class="ax_default ellipse">
+          <img id="u22643_img" class="img " src="images/mdt_5_0_/u13695.svg"/>
+          <div id="u22643_text" class="text ">
+            <p><span>icon</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u22644" class="ax_default _三级标题">
+          <div id="u22644_div" class=""></div>
+          <div id="u22644_text" class="text ">
+            <p><span>住院人：张三</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u22645" class="ax_default _三级标题">
+          <div id="u22645_div" class=""></div>
+          <div id="u22645_text" class="text ">
+            <p><span>预约号：13623546346345324233</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u22646" class="ax_default _三级标题">
+          <div id="u22646_div" class=""></div>
+          <div id="u22646_text" class="text ">
+            <p><span>申请日期：2023-08-23 10:34:24</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (页面头部-无色) -->
+
+      <!-- Unnamed (组合) -->
+      <div id="u22648" class="ax_default" data-left="4924" data-top="48" data-width="377" data-height="797">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u22649" class="ax_default box_1">
+          <div id="u22649_div" class=""></div>
+          <div id="u22649_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (组合) -->
+        <div id="u22650" class="ax_default" data-left="5212" data-top="79" data-width="79" data-height="28">
+
+          <!-- Unnamed (矩形) -->
+          <div id="u22651" class="ax_default flow_shape1">
+            <div id="u22651_div" class=""></div>
+            <div id="u22651_text" class="text " style="display:none; visibility: hidden">
+              <p></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (椭圆) -->
+          <div id="u22652" class="ax_default ellipse1">
+            <img id="u22652_img" class="img " src="images/首页就医公告/u657.svg"/>
+            <div id="u22652_text" class="text " style="display:none; visibility: hidden">
+              <p></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (椭圆) -->
+          <div id="u22653" class="ax_default ellipse1">
+            <img id="u22653_img" class="img " src="images/首页就医公告/u658.svg"/>
+            <div id="u22653_text" class="text " style="display:none; visibility: hidden">
+              <p></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (椭圆) -->
+          <div id="u22654" class="ax_default ellipse1">
+            <img id="u22654_img" class="img " src="images/首页就医公告/u659.svg"/>
+            <div id="u22654_text" class="text " style="display:none; visibility: hidden">
+              <p></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (椭圆) -->
+          <div id="u22655" class="ax_default ellipse1">
+            <img id="u22655_img" class="img " src="images/首页就医公告/u660.svg"/>
+            <div id="u22655_text" class="text " style="display:none; visibility: hidden">
+              <p></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (椭圆) -->
+          <div id="u22656" class="ax_default ellipse1">
+            <img id="u22656_img" class="img " src="images/首页就医公告/u660.svg"/>
+            <div id="u22656_text" class="text " style="display:none; visibility: hidden">
+              <p></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (垂直线) -->
+          <div id="u22657" class="ax_default line">
+            <img id="u22657_img" class="img " src="images/首页就医公告/u662.svg"/>
+            <div id="u22657_text" class="text " style="display:none; visibility: hidden">
+              <p></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Unnamed (形状) -->
+        <div id="u22658" class="ax_default icon1">
+          <img id="u22658_img" class="img " src="images/首页就医公告/u663.svg"/>
+          <div id="u22658_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- 二级功能标题 (矩形) -->
+        <div id="u22659" class="ax_default label" data-label="二级功能标题">
+          <div id="u22659_div" class=""></div>
+          <div id="u22659_text" class="text ">
+            <p><span>100%</span></p>
+          </div>
+        </div>
+
+        <!-- 二级功能标题 (矩形) -->
+        <div id="u22660" class="ax_default label" data-label="二级功能标题">
+          <div id="u22660_div" class=""></div>
+          <div id="u22660_text" class="text ">
+            <p><span>12:00</span></p>
+          </div>
+        </div>
+
+        <!-- 二级功能标题 (矩形) -->
+        <div id="u22661" class="ax_default label" data-label="二级功能标题">
+          <div id="u22661_div" class=""></div>
+          <div id="u22661_text" class="text ">
+            <p><span>4G</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (形状) -->
+        <div id="u22662" class="ax_default icon1">
+          <img id="u22662_img" class="img " src="images/首页就医公告/u667.svg"/>
+          <div id="u22662_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (形状) -->
+        <div id="u22663" class="ax_default icon">
+          <img id="u22663_img" class="img " src="images/首页就医公告/u668.svg"/>
+          <div id="u22663_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+      </div>
+      <div id="u22647" style="display:none; visibility:hidden;"></div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22664" class="ax_default _三级标题">
+        <div id="u22664_div" class=""></div>
+        <div id="u22664_text" class="text ">
+          <p><span>预约详情</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22665" class="ax_default _三级标题">
+        <div id="u22665_div" class=""></div>
+        <div id="u22665_text" class="text ">
+          <p><span>待护士确认</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (椭圆) -->
+      <div id="u22666" class="ax_default ellipse">
+        <img id="u22666_img" class="img " src="images/（待kf评审）疑难疾病_国际门诊会诊/u17304.svg"/>
+        <div id="u22666_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22667" class="ax_default box_2">
+        <div id="u22667_div" class=""></div>
+        <div id="u22667_text" class="text ">
+          <p><span>住院预约登记成功，请耐心等待，医院有空余床位后工作人员将与您联系，请留意电话或短信。</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22668" class="ax_default button">
+        <div id="u22668_div" class=""></div>
+        <div id="u22668_text" class="text ">
+          <p><span>取消预约</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u22669" class="ax_default _图片_">
+        <img id="u22669_img" class="img " src="images/住院预约2_0/u22553.png"/>
+        <div id="u22669_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u22670" class="ax_default _图片_">
+        <img id="u22670_img" class="img " src="images/住院预约2_0/u22554.png"/>
+        <div id="u22670_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u22671" class="ax_default _图片_">
+        <img id="u22671_img" class="img " src="images/住院预约2_0/u22555.png"/>
+        <div id="u22671_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u22672" class="ax_default _图片_">
+        <img id="u22672_img" class="img " src="images/住院预约2_0/u22556.png"/>
+        <div id="u22672_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u22673" class="ax_default _图片_">
+        <img id="u22673_img" class="img " src="images/住院预约2_0/u22557.png"/>
+        <div id="u22673_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u22674" class="ax_default _图片_">
+        <img id="u22674_img" class="img " src="images/住院预约2_0/u22558.png"/>
+        <div id="u22674_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22675" class="ax_default _三级标题">
+        <div id="u22675_div" class=""></div>
+        <div id="u22675_text" class="text ">
+          <p><span style="text-decoration:underline ;">住院预约记录</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22676" class="ax_default box_2">
+        <div id="u22676_div" class=""></div>
+        <div id="u22676_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22677" class="ax_default _三级标题">
+        <div id="u22677_div" class=""></div>
+        <div id="u22677_text" class="text ">
+          <p><span>预约日期</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22678" class="ax_default _三级标题">
+        <div id="u22678_div" class=""></div>
+        <div id="u22678_text" class="text ">
+          <p><span>2023-09-18 至 2023-09-20</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22679" class="ax_default _三级标题">
+        <div id="u22679_div" class=""></div>
+        <div id="u22679_text" class="text ">
+          <p><span>预约信息</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22680" class="ax_default _三级标题">
+        <div id="u22680_div" class=""></div>
+        <div id="u22680_text" class="text ">
+          <p><span>预约科室</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22681" class="ax_default _三级标题">
+        <div id="u22681_div" class=""></div>
+        <div id="u22681_text" class="text ">
+          <p><span>心血管内科</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22682" class="ax_default _三级标题">
+        <div id="u22682_div" class=""></div>
+        <div id="u22682_text" class="text ">
+          <p><span>医院名称</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22683" class="ax_default _三级标题">
+        <div id="u22683_div" class=""></div>
+        <div id="u22683_text" class="text ">
+          <p><span>武汉协和医院（主院区）</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22684" class="ax_default _三级标题">
+        <div id="u22684_div" class=""></div>
+        <div id="u22684_text" class="text ">
+          <p><span>预约单号</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22685" class="ax_default _三级标题">
+        <div id="u22685_div" class=""></div>
+        <div id="u22685_text" class="text ">
+          <p><span>13523534654654</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22686" class="ax_default box_2">
+        <div id="u22686_div" class=""></div>
+        <div id="u22686_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22687" class="ax_default _三级标题">
+        <div id="u22687_div" class=""></div>
+        <div id="u22687_text" class="text ">
+          <p><span>手机号码</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22688" class="ax_default _三级标题">
+        <div id="u22688_div" class=""></div>
+        <div id="u22688_text" class="text ">
+          <p><span>18889636145</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22689" class="ax_default _三级标题">
+        <div id="u22689_div" class=""></div>
+        <div id="u22689_text" class="text ">
+          <p><span>患者信息</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22690" class="ax_default _三级标题">
+        <div id="u22690_div" class=""></div>
+        <div id="u22690_text" class="text ">
+          <p><span>住院人</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22691" class="ax_default _三级标题">
+        <div id="u22691_div" class=""></div>
+        <div id="u22691_text" class="text ">
+          <p><span>张三</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22692" class="ax_default _三级标题">
+        <div id="u22692_div" class=""></div>
+        <div id="u22692_text" class="text ">
+          <p><span>身份证号</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22693" class="ax_default _三级标题">
+        <div id="u22693_div" class=""></div>
+        <div id="u22693_text" class="text ">
+          <p><span>32534623545235234</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22694" class="ax_default _三级标题">
+        <div id="u22694_div" class=""></div>
+        <div id="u22694_text" class="text ">
+          <p><span>性别</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22695" class="ax_default _三级标题">
+        <div id="u22695_div" class=""></div>
+        <div id="u22695_text" class="text ">
+          <p><span>女</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22696" class="ax_default _三级标题">
+        <div id="u22696_div" class=""></div>
+        <div id="u22696_text" class="text ">
+          <p><span>医保性质</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22697" class="ax_default _三级标题">
+        <div id="u22697_div" class=""></div>
+        <div id="u22697_text" class="text ">
+          <p><span>XXXXXX医保</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22698" class="ax_default _三级标题">
+        <div id="u22698_div" class=""></div>
+        <div id="u22698_text" class="text ">
+          <p><span>业务类型</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22699" class="ax_default _三级标题">
+        <div id="u22699_div" class=""></div>
+        <div id="u22699_text" class="text ">
+          <p><span>住院预约</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (页面头部-无色) -->
+
+      <!-- Unnamed (组合) -->
+      <div id="u22701" class="ax_default" data-left="5340" data-top="48" data-width="377" data-height="797">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u22702" class="ax_default box_1">
+          <div id="u22702_div" class=""></div>
+          <div id="u22702_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (组合) -->
+        <div id="u22703" class="ax_default" data-left="5628" data-top="79" data-width="79" data-height="28">
+
+          <!-- Unnamed (矩形) -->
+          <div id="u22704" class="ax_default flow_shape1">
+            <div id="u22704_div" class=""></div>
+            <div id="u22704_text" class="text " style="display:none; visibility: hidden">
+              <p></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (椭圆) -->
+          <div id="u22705" class="ax_default ellipse1">
+            <img id="u22705_img" class="img " src="images/首页就医公告/u657.svg"/>
+            <div id="u22705_text" class="text " style="display:none; visibility: hidden">
+              <p></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (椭圆) -->
+          <div id="u22706" class="ax_default ellipse1">
+            <img id="u22706_img" class="img " src="images/首页就医公告/u658.svg"/>
+            <div id="u22706_text" class="text " style="display:none; visibility: hidden">
+              <p></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (椭圆) -->
+          <div id="u22707" class="ax_default ellipse1">
+            <img id="u22707_img" class="img " src="images/首页就医公告/u659.svg"/>
+            <div id="u22707_text" class="text " style="display:none; visibility: hidden">
+              <p></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (椭圆) -->
+          <div id="u22708" class="ax_default ellipse1">
+            <img id="u22708_img" class="img " src="images/首页就医公告/u660.svg"/>
+            <div id="u22708_text" class="text " style="display:none; visibility: hidden">
+              <p></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (椭圆) -->
+          <div id="u22709" class="ax_default ellipse1">
+            <img id="u22709_img" class="img " src="images/首页就医公告/u660.svg"/>
+            <div id="u22709_text" class="text " style="display:none; visibility: hidden">
+              <p></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (垂直线) -->
+          <div id="u22710" class="ax_default line">
+            <img id="u22710_img" class="img " src="images/首页就医公告/u662.svg"/>
+            <div id="u22710_text" class="text " style="display:none; visibility: hidden">
+              <p></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Unnamed (形状) -->
+        <div id="u22711" class="ax_default icon1">
+          <img id="u22711_img" class="img " src="images/首页就医公告/u663.svg"/>
+          <div id="u22711_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- 二级功能标题 (矩形) -->
+        <div id="u22712" class="ax_default label" data-label="二级功能标题">
+          <div id="u22712_div" class=""></div>
+          <div id="u22712_text" class="text ">
+            <p><span>100%</span></p>
+          </div>
+        </div>
+
+        <!-- 二级功能标题 (矩形) -->
+        <div id="u22713" class="ax_default label" data-label="二级功能标题">
+          <div id="u22713_div" class=""></div>
+          <div id="u22713_text" class="text ">
+            <p><span>12:00</span></p>
+          </div>
+        </div>
+
+        <!-- 二级功能标题 (矩形) -->
+        <div id="u22714" class="ax_default label" data-label="二级功能标题">
+          <div id="u22714_div" class=""></div>
+          <div id="u22714_text" class="text ">
+            <p><span>4G</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (形状) -->
+        <div id="u22715" class="ax_default icon1">
+          <img id="u22715_img" class="img " src="images/首页就医公告/u667.svg"/>
+          <div id="u22715_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (形状) -->
+        <div id="u22716" class="ax_default icon">
+          <img id="u22716_img" class="img " src="images/首页就医公告/u668.svg"/>
+          <div id="u22716_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+      </div>
+      <div id="u22700" style="display:none; visibility:hidden;"></div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22717" class="ax_default _三级标题">
+        <div id="u22717_div" class=""></div>
+        <div id="u22717_text" class="text ">
+          <p><span>预约详情</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22718" class="ax_default _三级标题">
+        <div id="u22718_div" class=""></div>
+        <div id="u22718_text" class="text ">
+          <p><span>待分配床位</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (椭圆) -->
+      <div id="u22719" class="ax_default ellipse">
+        <img id="u22719_img" class="img " src="images/（待kf评审）疑难疾病_国际门诊会诊/u17304.svg"/>
+        <div id="u22719_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22720" class="ax_default box_2">
+        <div id="u22720_div" class=""></div>
+        <div id="u22720_text" class="text ">
+          <p><span>已有空余床位，请尽快前往对应院区入院报道。</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22721" class="ax_default box_2">
+        <div id="u22721_div" class=""></div>
+        <div id="u22721_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22722" class="ax_default _三级标题">
+        <div id="u22722_div" class=""></div>
+        <div id="u22722_text" class="text ">
+          <p><span>预约日期</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22723" class="ax_default _三级标题">
+        <div id="u22723_div" class=""></div>
+        <div id="u22723_text" class="text ">
+          <p><span>2023-09-18 至 2023-09-20</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22724" class="ax_default _三级标题">
+        <div id="u22724_div" class=""></div>
+        <div id="u22724_text" class="text ">
+          <p><span>预约信息</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22725" class="ax_default _三级标题">
+        <div id="u22725_div" class=""></div>
+        <div id="u22725_text" class="text ">
+          <p><span>预约科室</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22726" class="ax_default _三级标题">
+        <div id="u22726_div" class=""></div>
+        <div id="u22726_text" class="text ">
+          <p><span>心血管内科</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22727" class="ax_default _三级标题">
+        <div id="u22727_div" class=""></div>
+        <div id="u22727_text" class="text ">
+          <p><span>医院名称</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22728" class="ax_default _三级标题">
+        <div id="u22728_div" class=""></div>
+        <div id="u22728_text" class="text ">
+          <p><span>武汉协和医院（主院区）</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22729" class="ax_default _三级标题">
+        <div id="u22729_div" class=""></div>
+        <div id="u22729_text" class="text ">
+          <p><span>预约单号</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22730" class="ax_default _三级标题">
+        <div id="u22730_div" class=""></div>
+        <div id="u22730_text" class="text ">
+          <p><span>13523534654654</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22731" class="ax_default box_2">
+        <div id="u22731_div" class=""></div>
+        <div id="u22731_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22732" class="ax_default _三级标题">
+        <div id="u22732_div" class=""></div>
+        <div id="u22732_text" class="text ">
+          <p><span>手机号码</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22733" class="ax_default _三级标题">
+        <div id="u22733_div" class=""></div>
+        <div id="u22733_text" class="text ">
+          <p><span>18889636145</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22734" class="ax_default _三级标题">
+        <div id="u22734_div" class=""></div>
+        <div id="u22734_text" class="text ">
+          <p><span>患者信息</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22735" class="ax_default _三级标题">
+        <div id="u22735_div" class=""></div>
+        <div id="u22735_text" class="text ">
+          <p><span>住院人</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22736" class="ax_default _三级标题">
+        <div id="u22736_div" class=""></div>
+        <div id="u22736_text" class="text ">
+          <p><span>张三</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22737" class="ax_default _三级标题">
+        <div id="u22737_div" class=""></div>
+        <div id="u22737_text" class="text ">
+          <p><span>身份证号</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22738" class="ax_default _三级标题">
+        <div id="u22738_div" class=""></div>
+        <div id="u22738_text" class="text ">
+          <p><span>32534623545235234</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22739" class="ax_default _三级标题">
+        <div id="u22739_div" class=""></div>
+        <div id="u22739_text" class="text ">
+          <p><span>性别</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22740" class="ax_default _三级标题">
+        <div id="u22740_div" class=""></div>
+        <div id="u22740_text" class="text ">
+          <p><span>女</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22741" class="ax_default _三级标题">
+        <div id="u22741_div" class=""></div>
+        <div id="u22741_text" class="text ">
+          <p><span>医保性质</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22742" class="ax_default _三级标题">
+        <div id="u22742_div" class=""></div>
+        <div id="u22742_text" class="text ">
+          <p><span>XXXXXX医保</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22743" class="ax_default _三级标题">
+        <div id="u22743_div" class=""></div>
+        <div id="u22743_text" class="text ">
+          <p><span>业务类型</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22744" class="ax_default _三级标题">
+        <div id="u22744_div" class=""></div>
+        <div id="u22744_text" class="text ">
+          <p><span>住院预约</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (页面头部-无色) -->
+
+      <!-- Unnamed (组合) -->
+      <div id="u22746" class="ax_default" data-left="5767" data-top="48" data-width="377" data-height="797">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u22747" class="ax_default box_1">
+          <div id="u22747_div" class=""></div>
+          <div id="u22747_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (组合) -->
+        <div id="u22748" class="ax_default" data-left="6055" data-top="79" data-width="79" data-height="28">
+
+          <!-- Unnamed (矩形) -->
+          <div id="u22749" class="ax_default flow_shape1">
+            <div id="u22749_div" class=""></div>
+            <div id="u22749_text" class="text " style="display:none; visibility: hidden">
+              <p></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (椭圆) -->
+          <div id="u22750" class="ax_default ellipse1">
+            <img id="u22750_img" class="img " src="images/首页就医公告/u657.svg"/>
+            <div id="u22750_text" class="text " style="display:none; visibility: hidden">
+              <p></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (椭圆) -->
+          <div id="u22751" class="ax_default ellipse1">
+            <img id="u22751_img" class="img " src="images/首页就医公告/u658.svg"/>
+            <div id="u22751_text" class="text " style="display:none; visibility: hidden">
+              <p></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (椭圆) -->
+          <div id="u22752" class="ax_default ellipse1">
+            <img id="u22752_img" class="img " src="images/首页就医公告/u659.svg"/>
+            <div id="u22752_text" class="text " style="display:none; visibility: hidden">
+              <p></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (椭圆) -->
+          <div id="u22753" class="ax_default ellipse1">
+            <img id="u22753_img" class="img " src="images/首页就医公告/u660.svg"/>
+            <div id="u22753_text" class="text " style="display:none; visibility: hidden">
+              <p></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (椭圆) -->
+          <div id="u22754" class="ax_default ellipse1">
+            <img id="u22754_img" class="img " src="images/首页就医公告/u660.svg"/>
+            <div id="u22754_text" class="text " style="display:none; visibility: hidden">
+              <p></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (垂直线) -->
+          <div id="u22755" class="ax_default line">
+            <img id="u22755_img" class="img " src="images/首页就医公告/u662.svg"/>
+            <div id="u22755_text" class="text " style="display:none; visibility: hidden">
+              <p></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Unnamed (形状) -->
+        <div id="u22756" class="ax_default icon1">
+          <img id="u22756_img" class="img " src="images/首页就医公告/u663.svg"/>
+          <div id="u22756_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- 二级功能标题 (矩形) -->
+        <div id="u22757" class="ax_default label" data-label="二级功能标题">
+          <div id="u22757_div" class=""></div>
+          <div id="u22757_text" class="text ">
+            <p><span>100%</span></p>
+          </div>
+        </div>
+
+        <!-- 二级功能标题 (矩形) -->
+        <div id="u22758" class="ax_default label" data-label="二级功能标题">
+          <div id="u22758_div" class=""></div>
+          <div id="u22758_text" class="text ">
+            <p><span>12:00</span></p>
+          </div>
+        </div>
+
+        <!-- 二级功能标题 (矩形) -->
+        <div id="u22759" class="ax_default label" data-label="二级功能标题">
+          <div id="u22759_div" class=""></div>
+          <div id="u22759_text" class="text ">
+            <p><span>4G</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (形状) -->
+        <div id="u22760" class="ax_default icon1">
+          <img id="u22760_img" class="img " src="images/首页就医公告/u667.svg"/>
+          <div id="u22760_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (形状) -->
+        <div id="u22761" class="ax_default icon">
+          <img id="u22761_img" class="img " src="images/首页就医公告/u668.svg"/>
+          <div id="u22761_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+      </div>
+      <div id="u22745" style="display:none; visibility:hidden;"></div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22762" class="ax_default _三级标题">
+        <div id="u22762_div" class=""></div>
+        <div id="u22762_text" class="text ">
+          <p><span>预约详情</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22763" class="ax_default _三级标题">
+        <div id="u22763_div" class=""></div>
+        <div id="u22763_text" class="text ">
+          <p><span>预约成功</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (椭圆) -->
+      <div id="u22764" class="ax_default ellipse">
+        <img id="u22764_img" class="img " src="images/（待kf评审）疑难疾病_国际门诊会诊/u16422.svg"/>
+        <div id="u22764_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22765" class="ax_default box_2">
+        <div id="u22765_div" class=""></div>
+        <div id="u22765_text" class="text ">
+          <p><span>您已完成入院登记手续，请牢记住院号用于住院期间相关服务，祝您健康~</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22766" class="ax_default box_2">
+        <div id="u22766_div" class=""></div>
+        <div id="u22766_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22767" class="ax_default _三级标题">
+        <div id="u22767_div" class=""></div>
+        <div id="u22767_text" class="text ">
+          <p><span>预约日期</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22768" class="ax_default _三级标题">
+        <div id="u22768_div" class=""></div>
+        <div id="u22768_text" class="text ">
+          <p><span>2023-09-18 至 2023-09-20</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22769" class="ax_default _三级标题">
+        <div id="u22769_div" class=""></div>
+        <div id="u22769_text" class="text ">
+          <p><span>预约信息</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22770" class="ax_default _三级标题">
+        <div id="u22770_div" class=""></div>
+        <div id="u22770_text" class="text ">
+          <p><span>预约科室</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22771" class="ax_default _三级标题">
+        <div id="u22771_div" class=""></div>
+        <div id="u22771_text" class="text ">
+          <p><span>心血管内科</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22772" class="ax_default _三级标题">
+        <div id="u22772_div" class=""></div>
+        <div id="u22772_text" class="text ">
+          <p><span>医院名称</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22773" class="ax_default _三级标题">
+        <div id="u22773_div" class=""></div>
+        <div id="u22773_text" class="text ">
+          <p><span>武汉协和医院（主院区）</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22774" class="ax_default _三级标题">
+        <div id="u22774_div" class=""></div>
+        <div id="u22774_text" class="text ">
+          <p><span>预约单号</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22775" class="ax_default _三级标题">
+        <div id="u22775_div" class=""></div>
+        <div id="u22775_text" class="text ">
+          <p><span>13523534654654</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22776" class="ax_default box_2">
+        <div id="u22776_div" class=""></div>
+        <div id="u22776_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22777" class="ax_default _三级标题">
+        <div id="u22777_div" class=""></div>
+        <div id="u22777_text" class="text ">
+          <p><span>手机号码</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22778" class="ax_default _三级标题">
+        <div id="u22778_div" class=""></div>
+        <div id="u22778_text" class="text ">
+          <p><span>18889636145</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22779" class="ax_default _三级标题">
+        <div id="u22779_div" class=""></div>
+        <div id="u22779_text" class="text ">
+          <p><span>患者信息</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22780" class="ax_default _三级标题">
+        <div id="u22780_div" class=""></div>
+        <div id="u22780_text" class="text ">
+          <p><span>住院人</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22781" class="ax_default _三级标题">
+        <div id="u22781_div" class=""></div>
+        <div id="u22781_text" class="text ">
+          <p><span>张三</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22782" class="ax_default _三级标题">
+        <div id="u22782_div" class=""></div>
+        <div id="u22782_text" class="text ">
+          <p><span>身份证号</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22783" class="ax_default _三级标题">
+        <div id="u22783_div" class=""></div>
+        <div id="u22783_text" class="text ">
+          <p><span>32534623545235234</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22784" class="ax_default _三级标题">
+        <div id="u22784_div" class=""></div>
+        <div id="u22784_text" class="text ">
+          <p><span>性别</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22785" class="ax_default _三级标题">
+        <div id="u22785_div" class=""></div>
+        <div id="u22785_text" class="text ">
+          <p><span>女</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22786" class="ax_default _三级标题">
+        <div id="u22786_div" class=""></div>
+        <div id="u22786_text" class="text ">
+          <p><span>医保性质</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22787" class="ax_default _三级标题">
+        <div id="u22787_div" class=""></div>
+        <div id="u22787_text" class="text ">
+          <p><span>XXXXXX医保</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22788" class="ax_default _三级标题">
+        <div id="u22788_div" class=""></div>
+        <div id="u22788_text" class="text ">
+          <p><span>业务类型</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22789" class="ax_default _三级标题">
+        <div id="u22789_div" class=""></div>
+        <div id="u22789_text" class="text ">
+          <p><span>住院预约</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22790" class="ax_default _三级标题">
+        <div id="u22790_div" class=""></div>
+        <div id="u22790_text" class="text ">
+          <p><span>住院号</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22791" class="ax_default _三级标题">
+        <div id="u22791_div" class=""></div>
+        <div id="u22791_text" class="text ">
+          <p><span>2353423</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (无色加长) -->
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22793" class="ax_default box_1">
+        <div id="u22793_div" class=""></div>
+        <div id="u22793_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (组合) -->
+      <div id="u22794" class="ax_default" data-left="2043" data-top="1068" data-width="79" data-height="28">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u22795" class="ax_default flow_shape1">
+          <div id="u22795_div" class=""></div>
+          <div id="u22795_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (椭圆) -->
+        <div id="u22796" class="ax_default ellipse1">
+          <img id="u22796_img" class="img " src="images/首页就医公告/u657.svg"/>
+          <div id="u22796_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (椭圆) -->
+        <div id="u22797" class="ax_default ellipse1">
+          <img id="u22797_img" class="img " src="images/首页就医公告/u658.svg"/>
+          <div id="u22797_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (椭圆) -->
+        <div id="u22798" class="ax_default ellipse1">
+          <img id="u22798_img" class="img " src="images/首页就医公告/u659.svg"/>
+          <div id="u22798_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (椭圆) -->
+        <div id="u22799" class="ax_default ellipse1">
+          <img id="u22799_img" class="img " src="images/首页就医公告/u660.svg"/>
+          <div id="u22799_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (椭圆) -->
+        <div id="u22800" class="ax_default ellipse1">
+          <img id="u22800_img" class="img " src="images/首页就医公告/u660.svg"/>
+          <div id="u22800_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (垂直线) -->
+        <div id="u22801" class="ax_default line">
+          <img id="u22801_img" class="img " src="images/首页就医公告/u662.svg"/>
+          <div id="u22801_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (形状) -->
+      <div id="u22802" class="ax_default icon1">
+        <img id="u22802_img" class="img " src="images/首页就医公告/u663.svg"/>
+        <div id="u22802_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- 二级功能标题 (矩形) -->
+      <div id="u22803" class="ax_default label" data-label="二级功能标题">
+        <div id="u22803_div" class=""></div>
+        <div id="u22803_text" class="text ">
+          <p><span>100%</span></p>
+        </div>
+      </div>
+
+      <!-- 二级功能标题 (矩形) -->
+      <div id="u22804" class="ax_default label" data-label="二级功能标题">
+        <div id="u22804_div" class=""></div>
+        <div id="u22804_text" class="text ">
+          <p><span>12:00</span></p>
+        </div>
+      </div>
+
+      <!-- 二级功能标题 (矩形) -->
+      <div id="u22805" class="ax_default label" data-label="二级功能标题">
+        <div id="u22805_div" class=""></div>
+        <div id="u22805_text" class="text ">
+          <p><span>4G</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (形状) -->
+      <div id="u22806" class="ax_default icon1">
+        <img id="u22806_img" class="img " src="images/首页就医公告/u667.svg"/>
+        <div id="u22806_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (形状) -->
+      <div id="u22807" class="ax_default icon1">
+        <img id="u22807_img" class="img " src="images/首页就医公告/u668.svg"/>
+        <div id="u22807_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+      <div id="u22792" style="display:none; visibility:hidden;"></div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22808" class="ax_default box_2">
+        <div id="u22808_div" class=""></div>
+        <div id="u22808_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (组合) -->
+      <div id="u22809" class="ax_default" data-left="1789" data-top="1132" data-width="178" data-height="16">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u22810" class="ax_default _三级标题">
+          <div id="u22810_div" class=""></div>
+          <div id="u22810_text" class="text ">
+            <p><span>住院预约状态通知</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22811" class="ax_default _三级标题">
+        <div id="u22811_div" class=""></div>
+        <div id="u22811_text" class="text ">
+          <p><span>预约科室</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22812" class="ax_default _三级标题">
+        <div id="u22812_div" class=""></div>
+        <div id="u22812_text" class="text ">
+          <p><span>预约日期</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22813" class="ax_default _三级标题">
+        <div id="u22813_div" class=""></div>
+        <div id="u22813_text" class="text ">
+          <p><span>2023/09/23 -2023/09/23</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22814" class="ax_default _三级标题">
+        <div id="u22814_div" class=""></div>
+        <div id="u22814_text" class="text ">
+          <p><span>消化内科</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22815" class="ax_default _三级标题">
+        <div id="u22815_div" class=""></div>
+        <div id="u22815_text" class="text ">
+          <p><span>住院人</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22816" class="ax_default _三级标题">
+        <div id="u22816_div" class=""></div>
+        <div id="u22816_text" class="text ">
+          <p><span>张三</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22817" class="ax_default _文本段落">
+        <div id="u22817_div" class=""></div>
+        <div id="u22817_text" class="text ">
+          <p><span>住院预约登记成功，请留意电话或短信通知。</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22818" class="ax_default _三级标题">
+        <div id="u22818_div" class=""></div>
+        <div id="u22818_text" class="text ">
+          <p><span>2023.06.04 12:34:22</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22819" class="ax_default _三级标题">
+        <div id="u22819_div" class=""></div>
+        <div id="u22819_text" class="text ">
+          <p><span>注意事项</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22820" class="ax_default _三级标题">
+        <div id="u22820_div" class=""></div>
+        <div id="u22820_text" class="text ">
+          <p><span>查看详情</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22821" class="ax_default _三级标题">
+        <div id="u22821_div" class=""></div>
+        <div id="u22821_text" class="text ">
+          <p><span>预约状态</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22822" class="ax_default _三级标题">
+        <div id="u22822_div" class=""></div>
+        <div id="u22822_text" class="text ">
+          <p><span>等床位</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22823" class="ax_default _三级标题">
+        <div id="u22823_div" class=""></div>
+        <div id="u22823_text" class="text ">
+          <p><span>等床位</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (椭圆) -->
+      <div id="u22824" class="ax_default ellipse">
+        <img id="u22824_img" class="img " src="images/（待kf评审）疑难疾病_国际门诊会诊/u17304.svg"/>
+        <div id="u22824_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22825" class="ax_default _三级标题">
+        <div id="u22825_div" class=""></div>
+        <div id="u22825_text" class="text ">
+          <p><span>待入院</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (椭圆) -->
+      <div id="u22826" class="ax_default ellipse">
+        <img id="u22826_img" class="img " src="images/住院预约5_0/u22826.svg"/>
+        <div id="u22826_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22827" class="ax_default _三级标题">
+        <div id="u22827_div" class=""></div>
+        <div id="u22827_text" class="text ">
+          <p><span>入院成功</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (椭圆) -->
+      <div id="u22828" class="ax_default ellipse">
+        <img id="u22828_img" class="img " src="images/住院预约5_0/u22826.svg"/>
+        <div id="u22828_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (形状) -->
+      <div id="u22829" class="ax_default icon">
+        <img id="u22829_img" class="img " src="images/住院预约5_0/u22829.svg"/>
+        <div id="u22829_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (线段) -->
+      <div id="u22830" class="ax_default line">
+        <img id="u22830_img" class="img " src="images/住院预约5_0/u22830.svg"/>
+        <div id="u22830_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (线段) -->
+      <div id="u22831" class="ax_default line">
+        <img id="u22831_img" class="img " src="images/住院预约5_0/u22830.svg"/>
+        <div id="u22831_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22832" class="ax_default _三级标题">
+        <div id="u22832_div" class=""></div>
+        <div id="u22832_text" class="text ">
+          <p><span>等床位</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (椭圆) -->
+      <div id="u22833" class="ax_default ellipse">
+        <img id="u22833_img" class="img " src="images/住院预约5_0/u22833.svg"/>
+        <div id="u22833_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22834" class="ax_default _三级标题">
+        <div id="u22834_div" class=""></div>
+        <div id="u22834_text" class="text ">
+          <p><span>待入院</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (椭圆) -->
+      <div id="u22835" class="ax_default ellipse">
+        <img id="u22835_img" class="img " src="images/（待kf评审）疑难疾病_国际门诊会诊/u17304.svg"/>
+        <div id="u22835_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22836" class="ax_default _三级标题">
+        <div id="u22836_div" class=""></div>
+        <div id="u22836_text" class="text ">
+          <p><span>入院成功</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (椭圆) -->
+      <div id="u22837" class="ax_default ellipse">
+        <img id="u22837_img" class="img " src="images/住院预约5_0/u22826.svg"/>
+        <div id="u22837_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (形状) -->
+      <div id="u22838" class="ax_default icon">
+        <img id="u22838_img" class="img " src="images/住院预约5_0/u22829.svg"/>
+        <div id="u22838_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (线段) -->
+      <div id="u22839" class="ax_default line">
+        <img id="u22839_img" class="img " src="images/住院预约5_0/u22839.svg"/>
+        <div id="u22839_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (线段) -->
+      <div id="u22840" class="ax_default line">
+        <img id="u22840_img" class="img " src="images/住院预约5_0/u22830.svg"/>
+        <div id="u22840_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (形状) -->
+      <div id="u22841" class="ax_default icon">
+        <img id="u22841_img" class="img " src="images/住院预约5_0/u22841.svg"/>
+        <div id="u22841_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22842" class="ax_default _三级标题">
+        <div id="u22842_div" class=""></div>
+        <div id="u22842_text" class="text ">
+          <p><span>等床位</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (椭圆) -->
+      <div id="u22843" class="ax_default ellipse">
+        <img id="u22843_img" class="img " src="images/住院预约5_0/u22833.svg"/>
+        <div id="u22843_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22844" class="ax_default _三级标题">
+        <div id="u22844_div" class=""></div>
+        <div id="u22844_text" class="text ">
+          <p><span>待入院</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (椭圆) -->
+      <div id="u22845" class="ax_default ellipse">
+        <img id="u22845_img" class="img " src="images/住院预约5_0/u22833.svg"/>
+        <div id="u22845_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22846" class="ax_default _三级标题">
+        <div id="u22846_div" class=""></div>
+        <div id="u22846_text" class="text ">
+          <p><span>入院成功</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (椭圆) -->
+      <div id="u22847" class="ax_default ellipse">
+        <img id="u22847_img" class="img " src="images/住院预约5_0/u22833.svg"/>
+        <div id="u22847_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (线段) -->
+      <div id="u22848" class="ax_default line">
+        <img id="u22848_img" class="img " src="images/住院预约5_0/u22839.svg"/>
+        <div id="u22848_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (线段) -->
+      <div id="u22849" class="ax_default line">
+        <img id="u22849_img" class="img " src="images/住院预约5_0/u22839.svg"/>
+        <div id="u22849_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (形状) -->
+      <div id="u22850" class="ax_default icon">
+        <img id="u22850_img" class="img " src="images/住院预约5_0/u22841.svg"/>
+        <div id="u22850_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (形状) -->
+      <div id="u22851" class="ax_default icon">
+        <img id="u22851_img" class="img " src="images/住院预约5_0/u22841.svg"/>
+        <div id="u22851_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (形状) -->
+      <div id="u22852" class="ax_default icon">
+        <img id="u22852_img" class="img " src="images/住院预约5_0/u22841.svg"/>
+        <div id="u22852_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22853" class="ax_default _文本段落">
+        <div id="u22853_div" class=""></div>
+        <div id="u22853_text" class="text ">
+          <p><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;font-weight:700;">入院单列表页面说明</span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">顶部提示语：支持在后台中进行配置，提示语类别：住院提示语；</span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">就诊人卡片：默认选中默认就诊人，支持进行切换；</span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">调用HIS接口查询默认就诊人的入院单信息并展示在列表中；</span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;"><br></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22854" class="ax_default _文本段落">
+        <div id="u22854_div" class=""></div>
+        <div id="u22854_text" class="text ">
+          <p><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;font-weight:700;">确认预约页面说明</span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">确认预约界面需要患者填写对应的题目：</span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">A、您是否有武汉市医保？（单选）</span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">有、没有；</span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">B、请选择以下符合您的性质（单选）</span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">湖北省外医保、湖北省内医保、无医保；</span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">C、您的省外医保性质是？（单选）</span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">城镇医保、新农合</span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">D、您是否有商业保险？（单选）</span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">是，我有、无，自费；</span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">针对以上题目需要做答题控制；</span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;"><br></span></p><ul><li style=""><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">第A题选择没有时，弹出第B题；</span></li><li style=""><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">第B题选择湖北省外医保时弹出第C题；</span></li><li style=""><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">第B题选择无医保时弹出第D题；</span></li></ul><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;color:#D9001B;">注意：这里的题目需要拉协和官微的旧代码查看一下具体逻辑，特别是下面这两点：</span></p><ul><li style=""><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;color:#D9001B;">选择了有武汉市医保之后是否会需要再答题；</span></li><li style=""><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;color:#D9001B;">选择了符合湖北省内医保之后是否会需要再答题；</span></li></ul>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22855" class="ax_default _文本段落">
+        <div id="u22855_div" class=""></div>
+        <div id="u22855_text" class="text ">
+          <p><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;font-weight:700;">选择预约时间页面说明</span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">无论是最早入院时间，还是最晚入院时间，仅支持选择将来时，及今天及今天以后的日期，且仅支持选择一年内的日期；</span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;"><br></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22856" class="ax_default _文本段落">
+        <div id="u22856_div" class=""></div>
+        <div id="u22856_text" class="text ">
+          <p><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;font-weight:700;">消息下发说明：</span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">下发逻辑：订单状态更新时实时触发；</span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">订阅消息授权位置：点击住院预约时弹出授权；</span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">跳转：点击跳转对应状态下的订单详情；</span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;"><br></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22857" class="ax_default _文本段落">
+        <div id="u22857_div" class=""></div>
+        <div id="u22857_text" class="text ">
+          <p><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;font-weight:700;">住院预约记录说明：</span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">筛选组件：保持和门诊缴费一致；</span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">筛选时间范围：默认查询近三个月内的月内的记录；仅支持查询三个月范围的记录；</span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;"><br></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (页面头部-无色) -->
+
+      <!-- Unnamed (组合) -->
+      <div id="u22859" class="ax_default" data-left="4308" data-top="-1035" data-width="377" data-height="797">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u22860" class="ax_default box_1">
+          <div id="u22860_div" class=""></div>
+          <div id="u22860_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (组合) -->
+        <div id="u22861" class="ax_default" data-left="4596" data-top="-1004" data-width="79" data-height="28">
+
+          <!-- Unnamed (矩形) -->
+          <div id="u22862" class="ax_default flow_shape1">
+            <div id="u22862_div" class=""></div>
+            <div id="u22862_text" class="text " style="display:none; visibility: hidden">
+              <p></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (椭圆) -->
+          <div id="u22863" class="ax_default ellipse1">
+            <img id="u22863_img" class="img " src="images/首页就医公告/u657.svg"/>
+            <div id="u22863_text" class="text " style="display:none; visibility: hidden">
+              <p></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (椭圆) -->
+          <div id="u22864" class="ax_default ellipse1">
+            <img id="u22864_img" class="img " src="images/首页就医公告/u658.svg"/>
+            <div id="u22864_text" class="text " style="display:none; visibility: hidden">
+              <p></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (椭圆) -->
+          <div id="u22865" class="ax_default ellipse1">
+            <img id="u22865_img" class="img " src="images/首页就医公告/u659.svg"/>
+            <div id="u22865_text" class="text " style="display:none; visibility: hidden">
+              <p></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (椭圆) -->
+          <div id="u22866" class="ax_default ellipse1">
+            <img id="u22866_img" class="img " src="images/首页就医公告/u660.svg"/>
+            <div id="u22866_text" class="text " style="display:none; visibility: hidden">
+              <p></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (椭圆) -->
+          <div id="u22867" class="ax_default ellipse1">
+            <img id="u22867_img" class="img " src="images/首页就医公告/u660.svg"/>
+            <div id="u22867_text" class="text " style="display:none; visibility: hidden">
+              <p></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (垂直线) -->
+          <div id="u22868" class="ax_default line">
+            <img id="u22868_img" class="img " src="images/首页就医公告/u662.svg"/>
+            <div id="u22868_text" class="text " style="display:none; visibility: hidden">
+              <p></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Unnamed (形状) -->
+        <div id="u22869" class="ax_default icon1">
+          <img id="u22869_img" class="img " src="images/首页就医公告/u663.svg"/>
+          <div id="u22869_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- 二级功能标题 (矩形) -->
+        <div id="u22870" class="ax_default label" data-label="二级功能标题">
+          <div id="u22870_div" class=""></div>
+          <div id="u22870_text" class="text ">
+            <p><span>100%</span></p>
+          </div>
+        </div>
+
+        <!-- 二级功能标题 (矩形) -->
+        <div id="u22871" class="ax_default label" data-label="二级功能标题">
+          <div id="u22871_div" class=""></div>
+          <div id="u22871_text" class="text ">
+            <p><span>12:00</span></p>
+          </div>
+        </div>
+
+        <!-- 二级功能标题 (矩形) -->
+        <div id="u22872" class="ax_default label" data-label="二级功能标题">
+          <div id="u22872_div" class=""></div>
+          <div id="u22872_text" class="text ">
+            <p><span>4G</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (形状) -->
+        <div id="u22873" class="ax_default icon1">
+          <img id="u22873_img" class="img " src="images/首页就医公告/u667.svg"/>
+          <div id="u22873_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (形状) -->
+        <div id="u22874" class="ax_default icon">
+          <img id="u22874_img" class="img " src="images/首页就医公告/u668.svg"/>
+          <div id="u22874_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+      </div>
+      <div id="u22858" style="display:none; visibility:hidden;"></div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22875" class="ax_default _三级标题">
+        <div id="u22875_div" class=""></div>
+        <div id="u22875_text" class="text ">
+          <p><span>预约详情</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22876" class="ax_default box_2">
+        <div id="u22876_div" class=""></div>
+        <div id="u22876_text" class="text ">
+          <p><span>住院预约异常，您可点击下方刷新按钮刷新页面，或者前往窗口联系工作人员处理。</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22877" class="ax_default box_2">
+        <div id="u22877_div" class=""></div>
+        <div id="u22877_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22878" class="ax_default _三级标题">
+        <div id="u22878_div" class=""></div>
+        <div id="u22878_text" class="text ">
+          <p><span>预约日期</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22879" class="ax_default _三级标题">
+        <div id="u22879_div" class=""></div>
+        <div id="u22879_text" class="text ">
+          <p><span>2023-09-18 至 2023-09-20</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22880" class="ax_default _三级标题">
+        <div id="u22880_div" class=""></div>
+        <div id="u22880_text" class="text ">
+          <p><span>预约信息</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22881" class="ax_default _三级标题">
+        <div id="u22881_div" class=""></div>
+        <div id="u22881_text" class="text ">
+          <p><span>预约科室</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22882" class="ax_default _三级标题">
+        <div id="u22882_div" class=""></div>
+        <div id="u22882_text" class="text ">
+          <p><span>心血管内科</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22883" class="ax_default _三级标题">
+        <div id="u22883_div" class=""></div>
+        <div id="u22883_text" class="text ">
+          <p><span>医院名称</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22884" class="ax_default _三级标题">
+        <div id="u22884_div" class=""></div>
+        <div id="u22884_text" class="text ">
+          <p><span>武汉协和医院（主院区）</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22885" class="ax_default _三级标题">
+        <div id="u22885_div" class=""></div>
+        <div id="u22885_text" class="text ">
+          <p><span>预约单号</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22886" class="ax_default _三级标题">
+        <div id="u22886_div" class=""></div>
+        <div id="u22886_text" class="text ">
+          <p><span>13523534654654</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22887" class="ax_default box_2">
+        <div id="u22887_div" class=""></div>
+        <div id="u22887_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22888" class="ax_default _三级标题">
+        <div id="u22888_div" class=""></div>
+        <div id="u22888_text" class="text ">
+          <p><span>手机号码</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22889" class="ax_default _三级标题">
+        <div id="u22889_div" class=""></div>
+        <div id="u22889_text" class="text ">
+          <p><span>18889636145</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22890" class="ax_default _三级标题">
+        <div id="u22890_div" class=""></div>
+        <div id="u22890_text" class="text ">
+          <p><span>患者信息</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22891" class="ax_default _三级标题">
+        <div id="u22891_div" class=""></div>
+        <div id="u22891_text" class="text ">
+          <p><span>住院人</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22892" class="ax_default _三级标题">
+        <div id="u22892_div" class=""></div>
+        <div id="u22892_text" class="text ">
+          <p><span>张三</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22893" class="ax_default _三级标题">
+        <div id="u22893_div" class=""></div>
+        <div id="u22893_text" class="text ">
+          <p><span>身份证号</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22894" class="ax_default _三级标题">
+        <div id="u22894_div" class=""></div>
+        <div id="u22894_text" class="text ">
+          <p><span>32534623545235234</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22895" class="ax_default _三级标题">
+        <div id="u22895_div" class=""></div>
+        <div id="u22895_text" class="text ">
+          <p><span>性别</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22896" class="ax_default _三级标题">
+        <div id="u22896_div" class=""></div>
+        <div id="u22896_text" class="text ">
+          <p><span>女</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22897" class="ax_default _三级标题">
+        <div id="u22897_div" class=""></div>
+        <div id="u22897_text" class="text ">
+          <p><span>医保性质</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22898" class="ax_default _三级标题">
+        <div id="u22898_div" class=""></div>
+        <div id="u22898_text" class="text ">
+          <p><span>城镇医保/新农合</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22899" class="ax_default _三级标题">
+        <div id="u22899_div" class=""></div>
+        <div id="u22899_text" class="text ">
+          <p><span>业务类型</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22900" class="ax_default _三级标题">
+        <div id="u22900_div" class=""></div>
+        <div id="u22900_text" class="text ">
+          <p><span>住院预约</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22901" class="ax_default _三级标题">
+        <div id="u22901_div" class=""></div>
+        <div id="u22901_text" class="text ">
+          <p><span>住院预约异常</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (椭圆) -->
+      <div id="u22902" class="ax_default ellipse">
+        <img id="u22902_img" class="img " src="images/（待kf评审）疑难疾病_国际门诊会诊/u17304.svg"/>
+        <div id="u22902_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (组合) -->
+      <div id="u22903" class="ax_default" data-left="4320" data-top="-833" data-width="353" data-height="82">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u22904" class="ax_default box_21">
+          <div id="u22904_div" class=""></div>
+          <div id="u22904_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u22905" class="ax_default primary_button1">
+          <div id="u22905_div" class=""></div>
+          <div id="u22905_text" class="text ">
+            <p><span>点击重试刷新</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (组合) -->
+      <div id="u22906" class="ax_default" data-left="4685" data-top="-817" data-width="239" data-height="61">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u22907" class="ax_default primary_button1">
+          <div id="u22907_div" class=""></div>
+          <div id="u22907_text" class="text ">
+            <p><span>点击重试刷新</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u22908" class="ax_default _三级标题">
+          <div id="u22908_div" class=""></div>
+          <div id="u22908_text" class="text ">
+            <p><span>请59秒后再试</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22909" class="ax_default button">
+        <div id="u22909_div" class=""></div>
+        <div id="u22909_text" class="text ">
+          <p><span>取消预约</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (页面头部-无色) -->
+
+      <!-- Unnamed (组合) -->
+      <div id="u22911" class="ax_default" data-left="6651" data-top="47" data-width="377" data-height="797">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u22912" class="ax_default box_1">
+          <div id="u22912_div" class=""></div>
+          <div id="u22912_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (组合) -->
+        <div id="u22913" class="ax_default" data-left="6939" data-top="78" data-width="79" data-height="28">
+
+          <!-- Unnamed (矩形) -->
+          <div id="u22914" class="ax_default flow_shape1">
+            <div id="u22914_div" class=""></div>
+            <div id="u22914_text" class="text " style="display:none; visibility: hidden">
+              <p></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (椭圆) -->
+          <div id="u22915" class="ax_default ellipse1">
+            <img id="u22915_img" class="img " src="images/首页就医公告/u657.svg"/>
+            <div id="u22915_text" class="text " style="display:none; visibility: hidden">
+              <p></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (椭圆) -->
+          <div id="u22916" class="ax_default ellipse1">
+            <img id="u22916_img" class="img " src="images/首页就医公告/u658.svg"/>
+            <div id="u22916_text" class="text " style="display:none; visibility: hidden">
+              <p></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (椭圆) -->
+          <div id="u22917" class="ax_default ellipse1">
+            <img id="u22917_img" class="img " src="images/首页就医公告/u659.svg"/>
+            <div id="u22917_text" class="text " style="display:none; visibility: hidden">
+              <p></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (椭圆) -->
+          <div id="u22918" class="ax_default ellipse1">
+            <img id="u22918_img" class="img " src="images/首页就医公告/u660.svg"/>
+            <div id="u22918_text" class="text " style="display:none; visibility: hidden">
+              <p></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (椭圆) -->
+          <div id="u22919" class="ax_default ellipse1">
+            <img id="u22919_img" class="img " src="images/首页就医公告/u660.svg"/>
+            <div id="u22919_text" class="text " style="display:none; visibility: hidden">
+              <p></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (垂直线) -->
+          <div id="u22920" class="ax_default line">
+            <img id="u22920_img" class="img " src="images/首页就医公告/u662.svg"/>
+            <div id="u22920_text" class="text " style="display:none; visibility: hidden">
+              <p></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Unnamed (形状) -->
+        <div id="u22921" class="ax_default icon1">
+          <img id="u22921_img" class="img " src="images/首页就医公告/u663.svg"/>
+          <div id="u22921_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- 二级功能标题 (矩形) -->
+        <div id="u22922" class="ax_default label" data-label="二级功能标题">
+          <div id="u22922_div" class=""></div>
+          <div id="u22922_text" class="text ">
+            <p><span>100%</span></p>
+          </div>
+        </div>
+
+        <!-- 二级功能标题 (矩形) -->
+        <div id="u22923" class="ax_default label" data-label="二级功能标题">
+          <div id="u22923_div" class=""></div>
+          <div id="u22923_text" class="text ">
+            <p><span>12:00</span></p>
+          </div>
+        </div>
+
+        <!-- 二级功能标题 (矩形) -->
+        <div id="u22924" class="ax_default label" data-label="二级功能标题">
+          <div id="u22924_div" class=""></div>
+          <div id="u22924_text" class="text ">
+            <p><span>4G</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (形状) -->
+        <div id="u22925" class="ax_default icon1">
+          <img id="u22925_img" class="img " src="images/首页就医公告/u667.svg"/>
+          <div id="u22925_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (形状) -->
+        <div id="u22926" class="ax_default icon">
+          <img id="u22926_img" class="img " src="images/首页就医公告/u668.svg"/>
+          <div id="u22926_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+      </div>
+      <div id="u22910" style="display:none; visibility:hidden;"></div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22927" class="ax_default _三级标题">
+        <div id="u22927_div" class=""></div>
+        <div id="u22927_text" class="text ">
+          <p><span>预约详情</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22928" class="ax_default box_2">
+        <div id="u22928_div" class=""></div>
+        <div id="u22928_text" class="text ">
+          <p><span>住院预约申请已取消</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22929" class="ax_default _三级标题">
+        <div id="u22929_div" class=""></div>
+        <div id="u22929_text" class="text ">
+          <p><span>取消住院预约</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (椭圆) -->
+      <div id="u22930" class="ax_default ellipse">
+        <img id="u22930_img" class="img " src="images/住院预约5_0/u22930.svg"/>
+        <div id="u22930_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22931" class="ax_default _三级标题">
+        <div id="u22931_div" class=""></div>
+        <div id="u22931_text" class="text ">
+          <p><span>预约状态：</span></p><ul><li style=""><span>等床位</span></li><li style=""><span>待入院</span></li><li style=""><span>入院成功</span></li></ul>
+        </div>
+      </div>
+
+      <!-- Unnamed (组合) -->
+      <div id="u22932" class="ax_default" data-left="1056" data-top="1597" data-width="351" data-height="136">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u22933" class="ax_default box_2">
+          <div id="u22933_div" class=""></div>
+          <div id="u22933_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u22934" class="ax_default _三级标题">
+          <div id="u22934_div" class=""></div>
+          <div id="u22934_text" class="text ">
+            <p><span>取消预约</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u22935" class="ax_default _三级标题">
+          <div id="u22935_div" class=""></div>
+          <div id="u22935_text" class="text ">
+            <p><span>N11消化内科</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (椭圆) -->
+        <div id="u22936" class="ax_default ellipse">
+          <img id="u22936_img" class="img " src="images/mdt_5_0_/u13695.svg"/>
+          <div id="u22936_text" class="text ">
+            <p><span>icon</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u22937" class="ax_default _三级标题">
+          <div id="u22937_div" class=""></div>
+          <div id="u22937_text" class="text ">
+            <p><span>住院人：张三</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u22938" class="ax_default _三级标题">
+          <div id="u22938_div" class=""></div>
+          <div id="u22938_text" class="text ">
+            <p><span>预约号：13623546346345324233</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u22939" class="ax_default _三级标题">
+          <div id="u22939_div" class=""></div>
+          <div id="u22939_text" class="text ">
+            <p><span>申请日期：2023-08-23 10:34:24</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22940" class="ax_default box_2">
+        <div id="u22940_div" class=""></div>
+        <div id="u22940_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22941" class="ax_default _三级标题">
+        <div id="u22941_div" class=""></div>
+        <div id="u22941_text" class="text ">
+          <p><span>预约日期</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22942" class="ax_default _三级标题">
+        <div id="u22942_div" class=""></div>
+        <div id="u22942_text" class="text ">
+          <p><span>2023-09-18 至 2023-09-20</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22943" class="ax_default _三级标题">
+        <div id="u22943_div" class=""></div>
+        <div id="u22943_text" class="text ">
+          <p><span>预约信息</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22944" class="ax_default _三级标题">
+        <div id="u22944_div" class=""></div>
+        <div id="u22944_text" class="text ">
+          <p><span>预约科室</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22945" class="ax_default _三级标题">
+        <div id="u22945_div" class=""></div>
+        <div id="u22945_text" class="text ">
+          <p><span>心血管内科</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22946" class="ax_default _三级标题">
+        <div id="u22946_div" class=""></div>
+        <div id="u22946_text" class="text ">
+          <p><span>医院名称</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22947" class="ax_default _三级标题">
+        <div id="u22947_div" class=""></div>
+        <div id="u22947_text" class="text ">
+          <p><span>武汉协和医院（主院区）</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22948" class="ax_default _三级标题">
+        <div id="u22948_div" class=""></div>
+        <div id="u22948_text" class="text ">
+          <p><span>预约单号</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22949" class="ax_default _三级标题">
+        <div id="u22949_div" class=""></div>
+        <div id="u22949_text" class="text ">
+          <p><span>13523534654654</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22950" class="ax_default box_2">
+        <div id="u22950_div" class=""></div>
+        <div id="u22950_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22951" class="ax_default _三级标题">
+        <div id="u22951_div" class=""></div>
+        <div id="u22951_text" class="text ">
+          <p><span>手机号码</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22952" class="ax_default _三级标题">
+        <div id="u22952_div" class=""></div>
+        <div id="u22952_text" class="text ">
+          <p><span>18889636145</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22953" class="ax_default _三级标题">
+        <div id="u22953_div" class=""></div>
+        <div id="u22953_text" class="text ">
+          <p><span>患者信息</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22954" class="ax_default _三级标题">
+        <div id="u22954_div" class=""></div>
+        <div id="u22954_text" class="text ">
+          <p><span>住院人</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22955" class="ax_default _三级标题">
+        <div id="u22955_div" class=""></div>
+        <div id="u22955_text" class="text ">
+          <p><span>张三</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22956" class="ax_default _三级标题">
+        <div id="u22956_div" class=""></div>
+        <div id="u22956_text" class="text ">
+          <p><span>身份证号</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22957" class="ax_default _三级标题">
+        <div id="u22957_div" class=""></div>
+        <div id="u22957_text" class="text ">
+          <p><span>32534623545235234</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22958" class="ax_default _三级标题">
+        <div id="u22958_div" class=""></div>
+        <div id="u22958_text" class="text ">
+          <p><span>性别</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22959" class="ax_default _三级标题">
+        <div id="u22959_div" class=""></div>
+        <div id="u22959_text" class="text ">
+          <p><span>女</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22960" class="ax_default _三级标题">
+        <div id="u22960_div" class=""></div>
+        <div id="u22960_text" class="text ">
+          <p><span>医保性质</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22961" class="ax_default _三级标题">
+        <div id="u22961_div" class=""></div>
+        <div id="u22961_text" class="text ">
+          <p><span>XXXXXX医保</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22962" class="ax_default _三级标题">
+        <div id="u22962_div" class=""></div>
+        <div id="u22962_text" class="text ">
+          <p><span>业务类型</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22963" class="ax_default _三级标题">
+        <div id="u22963_div" class=""></div>
+        <div id="u22963_text" class="text ">
+          <p><span>住院预约</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u22964" class="ax_default _连接">
+        <img id="u22964_seg0" class="img " src="images/住院预约5_0/u22964_seg0.svg" alt="u22964_seg0"/>
+        <img id="u22964_seg1" class="img " src="images/住院预约5_0/u22964_seg1.svg" alt="u22964_seg1"/>
+        <img id="u22964_seg2" class="img " src="images/住院预约5_0/u22964_seg2.svg" alt="u22964_seg2"/>
+        <img id="u22964_seg3" class="img " src="images/住院预约5_0/u22964_seg3.svg" alt="u22964_seg3"/>
+        <img id="u22964_seg4" class="img " src="images/住院预约5_0/u22964_seg4.svg" alt="u22964_seg4"/>
+        <div id="u22964_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u22965" class="ax_default _图片_">
+        <img id="u22965_img" class="img " src="images/住院缴费（5_0）/u19060.png"/>
+        <div id="u22965_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22966" class="ax_default box_1">
+        <div id="u22966_div" class=""></div>
+        <div id="u22966_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u22967" class="ax_default _图片_">
+        <img id="u22967_img" class="img " src="images/病历复印5_0/u20354.png"/>
+        <div id="u22967_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22968" class="ax_default box_1">
+        <img id="u22968_img" class="img " src="images/病历复印5_0/u20355.svg"/>
+        <div id="u22968_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22969" class="ax_default _三级标题">
+        <div id="u22969_div" class=""></div>
+        <div id="u22969_text" class="text ">
+          <p><span>二次确认是否取消预约的弹窗</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u22970" class="ax_default _连接">
+        <img id="u22970_seg0" class="img " src="images/住院预约5_0/u22970_seg0.svg" alt="u22970_seg0"/>
+        <img id="u22970_seg1" class="img " src="images/住院预约5_0/u22970_seg1.svg" alt="u22970_seg1"/>
+        <img id="u22970_seg2" class="img " src="images/住院预约5_0/u22970_seg2.svg" alt="u22970_seg2"/>
+        <img id="u22970_seg3" class="img " src="images/住院预约5_0/u22970_seg3.svg" alt="u22970_seg3"/>
+        <div id="u22970_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u22971" class="ax_default _连接">
+        <img id="u22971_seg0" class="img " src="images/住院预约5_0/u22971_seg0.svg" alt="u22971_seg0"/>
+        <img id="u22971_seg1" class="img " src="images/住院预约5_0/u22971_seg1.svg" alt="u22971_seg1"/>
+        <img id="u22971_seg2" class="img " src="images/住院预约5_0/u22971_seg2.svg" alt="u22971_seg2"/>
+        <img id="u22971_seg3" class="img " src="images/住院预约5_0/u22971_seg3.svg" alt="u22971_seg3"/>
+        <div id="u22971_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u22972" class="ax_default _图片_">
+        <img id="u22972_img" class="img " src="images/住院预约2_0/u22558.png"/>
+        <div id="u22972_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22973" class="ax_default box_3">
+        <div id="u22973_div" class=""></div>
+        <div id="u22973_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22974" class="ax_default box_2">
+        <div id="u22974_div" class=""></div>
+        <div id="u22974_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22975" class="ax_default primary_button">
+        <div id="u22975_div" class=""></div>
+        <div id="u22975_text" class="text ">
+          <p><span>我知道了</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22976" class="ax_default _三级标题">
+        <div id="u22976_div" class=""></div>
+        <div id="u22976_text" class="text ">
+          <p><span>系统提示</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22977" class="ax_default box_2">
+        <div id="u22977_div" class=""></div>
+        <div id="u22977_text" class="text ">
+          <p><span>提交失败，您可尝试重新提交或前往窗口联系工作人员</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22978" class="ax_default _三级标题">
+        <div id="u22978_div" class=""></div>
+        <div id="u22978_text" class="text ">
+          <p><span>方案一</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22979" class="ax_default box_2">
+        <div id="u22979_div" class=""></div>
+        <div id="u22979_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22980" class="ax_default primary_button">
+        <div id="u22980_div" class=""></div>
+        <div id="u22980_text" class="text ">
+          <p><span>确认取消</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22981" class="ax_default _三级标题">
+        <div id="u22981_div" class=""></div>
+        <div id="u22981_text" class="text ">
+          <p><span>系统提示</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22982" class="ax_default box_2">
+        <div id="u22982_div" class=""></div>
+        <div id="u22982_text" class="text ">
+          <p><span>是否确认取消住院预约？</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22983" class="ax_default primary_button">
+        <div id="u22983_div" class=""></div>
+        <div id="u22983_text" class="text ">
+          <p><span>暂不取消</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (无色加长) -->
+
+      <!-- Unnamed (矩形) -->
+      <div id="u22985" class="ax_default box_1">
+        <div id="u22985_div" class=""></div>
+        <div id="u22985_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (组合) -->
+      <div id="u22986" class="ax_default" data-left="2807" data-top="1068" data-width="79" data-height="28">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u22987" class="ax_default flow_shape1">
+          <div id="u22987_div" class=""></div>
+          <div id="u22987_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (椭圆) -->
+        <div id="u22988" class="ax_default ellipse1">
+          <img id="u22988_img" class="img " src="images/首页就医公告/u657.svg"/>
+          <div id="u22988_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (椭圆) -->
+        <div id="u22989" class="ax_default ellipse1">
+          <img id="u22989_img" class="img " src="images/首页就医公告/u658.svg"/>
+          <div id="u22989_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (椭圆) -->
+        <div id="u22990" class="ax_default ellipse1">
+          <img id="u22990_img" class="img " src="images/首页就医公告/u659.svg"/>
+          <div id="u22990_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (椭圆) -->
+        <div id="u22991" class="ax_default ellipse1">
+          <img id="u22991_img" class="img " src="images/首页就医公告/u660.svg"/>
+          <div id="u22991_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (椭圆) -->
+        <div id="u22992" class="ax_default ellipse1">
+          <img id="u22992_img" class="img " src="images/首页就医公告/u660.svg"/>
+          <div id="u22992_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (垂直线) -->
+        <div id="u22993" class="ax_default line">
+          <img id="u22993_img" class="img " src="images/首页就医公告/u662.svg"/>
+          <div id="u22993_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (形状) -->
+      <div id="u22994" class="ax_default icon1">
+        <img id="u22994_img" class="img " src="images/首页就医公告/u663.svg"/>
+        <div id="u22994_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- 二级功能标题 (矩形) -->
+      <div id="u22995" class="ax_default label" data-label="二级功能标题">
+        <div id="u22995_div" class=""></div>
+        <div id="u22995_text" class="text ">
+          <p><span>100%</span></p>
+        </div>
+      </div>
+
+      <!-- 二级功能标题 (矩形) -->
+      <div id="u22996" class="ax_default label" data-label="二级功能标题">
+        <div id="u22996_div" class=""></div>
+        <div id="u22996_text" class="text ">
+          <p><span>12:00</span></p>
+        </div>
+      </div>
+
+      <!-- 二级功能标题 (矩形) -->
+      <div id="u22997" class="ax_default label" data-label="二级功能标题">
+        <div id="u22997_div" class=""></div>
+        <div id="u22997_text" class="text ">
+          <p><span>4G</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (形状) -->
+      <div id="u22998" class="ax_default icon1">
+        <img id="u22998_img" class="img " src="images/首页就医公告/u667.svg"/>
+        <div id="u22998_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (形状) -->
+      <div id="u22999" class="ax_default icon1">
+        <img id="u22999_img" class="img " src="images/首页就医公告/u668.svg"/>
+        <div id="u22999_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+      <div id="u22984" style="display:none; visibility:hidden;"></div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u23000" class="ax_default box_2">
+        <div id="u23000_div" class=""></div>
+        <div id="u23000_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (组合) -->
+      <div id="u23001" class="ax_default" data-left="2553" data-top="1132" data-width="178" data-height="16">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u23002" class="ax_default _三级标题">
+          <div id="u23002_div" class=""></div>
+          <div id="u23002_text" class="text ">
+            <p><span>入院通知</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u23003" class="ax_default _三级标题">
+        <div id="u23003_div" class=""></div>
+        <div id="u23003_text" class="text ">
+          <p><span>住院科室</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u23004" class="ax_default _三级标题">
+        <div id="u23004_div" class=""></div>
+        <div id="u23004_text" class="text ">
+          <p><span>消化内科</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u23005" class="ax_default _三级标题">
+        <div id="u23005_div" class=""></div>
+        <div id="u23005_text" class="text ">
+          <p><span>住院人</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u23006" class="ax_default _三级标题">
+        <div id="u23006_div" class=""></div>
+        <div id="u23006_text" class="text ">
+          <p><span>张三</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u23007" class="ax_default _文本段落">
+        <div id="u23007_div" class=""></div>
+        <div id="u23007_text" class="text ">
+          <p><span>您有一张电子入院证，点击进行住院预约</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u23008" class="ax_default _三级标题">
+        <div id="u23008_div" class=""></div>
+        <div id="u23008_text" class="text ">
+          <p><span>2023.06.04 12:34:22</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u23009" class="ax_default _三级标题">
+        <div id="u23009_div" class=""></div>
+        <div id="u23009_text" class="text ">
+          <p><span>注意事项</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u23010" class="ax_default _三级标题">
+        <div id="u23010_div" class=""></div>
+        <div id="u23010_text" class="text ">
+          <p><span>查看详情</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u23011" class="ax_default _文本段落">
+        <div id="u23011_div" class=""></div>
+        <div id="u23011_text" class="text ">
+          <p><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;font-weight:700;">消息下发说明：</span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">下发逻辑：HIS调我们接口通知我们患者有新的入院证</span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">订阅消息授权位置：点击住院预约时弹出授权；</span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">跳转：点击跳转入院单列表；</span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;"><br></span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;"><br></span></p>
+        </div>
+      </div>
+    </div>
+    <script src="resources/scripts/axure/ios.js"></script>
+  </body>
+</html>
